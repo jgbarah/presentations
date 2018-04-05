@@ -1,0 +1,139 @@
+% main.tex
+% Fichero principal de transparencias (incluye a todos los demás).
+
+% Compilar a .pdf con LaTeX (pdflatex)
+% Es necesario instalar Beamer (paquete latex-beamer en Debian)
+%
+
+% Gráficos:
+% Los gráficos pueden suministrarse en PNG, JPG, TIF, PDF, MPS
+% Los EPS deben convertirse a PDF (usar epstopdf)
+%
+\documentclass[17pt,aspectratio=169]{beamer}
+\usetheme[orchid]{Hannover}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{headline}{}
+\useoutertheme{infolines}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+%\usepackage{amssymb} % Simbolos matematicos
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{chronosys}
+
+%% two slides per page
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+
+\newcommand\YUGE{\fontsize{48}{60}\selectfont}
+
+\renewcommand{\secimage}{figs/bookpages}
+\AtBeginSection[]
+{
+  {
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{\secimage}}
+    \begin{frame}<beamer>
+
+      \begin{center}
+        {\YUGE\bf\insertsection}
+      \end{center}
+    \end{frame}
+  }
+  \renewcommand{\secimage}{figs/bookpages}
+}
+
+
+\title[Rato con amigos]{Un rato con unos amigos}
+\subtitle{Lección magistral, lo llaman...}
+\author[Jesús M. González Barahona]{Jesús M. González Barahona}
+\institute[URJC]{Universidad Rey Juan Carlos}
+
+\date{6 de abril de 2018}
+
+\begin{document}
+
+%\begin{frame}[label=firstframe]
+\begin{frame}
+  \maketitle
+\end{frame}
+
+
+\begin{frame}
+
+  {\em
+    Ante todo, gracias a los culpables:
+
+    \begin{flushright}
+    Gregorio Robles \\
+    Pedro de las Heras \\
+    Israel Herraiz \\
+    Daniel Izquierdo \\
+    Felipe Ortega \\
+    Antonio Reinoso \\
+    \end{flushright}
+  }
+\end{frame}
+
+\begin{frame}
+
+  {\em
+    \begin{center}
+      %\begin{quote}
+      ``Jesús nos contará a qué ha dedicado \\
+      los últimos 20 años \\
+      y qué piensa hacer en \\
+      los (al menos) siguientes 20''\\
+      %\end{quote}
+    \end{center}
+  }
+\end{frame}
+
+
+\frame{
+\tableofcontents
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% lista de temas                                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{pasado}
+\include{presente}
+\include{futuro}
+
+\frame{
+~
+\vspace{1cm}
+
+\begin{flushright}
+
+\includegraphics[width=2.2cm]{figs/by-sa}
+ \\
+
+\begin{footnotesize}
+\copyright 2018 Jesús M. González Barahona. \\
+
+\vspace{.4cm}
+
+Algunos derechos reservados. Este artículo se distribuye bajo
+la licencia ``Reconocimiento-CompartirIgual 4.0 España'' de Creative Commons,
+disponible en \\
+{\scriptsize \url{http://creativecommons.org/licenses/by-sa/4.0/es/deed.es}} \\
+
+\vspace{.4cm}
+
+Este documento (o uno muy similar) está disponible en \\
+\url{http://github.com/jgbarah/presentaciones}
+
+\end{footnotesize}
+\end{flushright}
+
+}
+%%
+
+%\againframe{firstframe}
+
+\end{document}
