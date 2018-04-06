@@ -9,7 +9,7 @@
 % Los gráficos pueden suministrarse en PNG, JPG, TIF, PDF, MPS
 % Los EPS deben convertirse a PDF (usar epstopdf)
 %
-\documentclass[17pt,aspectratio=169]{beamer}
+\documentclass[17pt,aspectratio=169,hyperref=pdfusetitle]{beamer}
 \usetheme[orchid]{Hannover}
 \beamertemplatenavigationsymbolsempty
 \setbeamertemplate{headline}{}
@@ -19,7 +19,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphics}
 %\usepackage{amssymb} % Simbolos matematicos
-\usepackage[pdfusetitle]{hyperref}
+%\usepackage[pdfusetitle]{hyperref}
+
 \usepackage{chronosys}
 
 %% two slides per page
@@ -28,7 +29,7 @@
 
 \newcommand\YUGE{\fontsize{48}{60}\selectfont}
 
-\renewcommand{\secimage}{figs/bookpages}
+\newcommand{\secimage}{figs/bookpages}
 \AtBeginSection[]
 {
   {
@@ -44,10 +45,12 @@
 }
 
 
-\title[Rato con amigos]{Un rato con unos amigos}
+\title[Un rato con amigos]{Un rato con unos amigos}
 \subtitle{Lección magistral, lo llaman...}
-\author[Jesús M. González Barahona]{Jesús M. González Barahona}
-\institute[URJC]{Universidad Rey Juan Carlos}
+\author[Jesús M. González Barahona]{Jesús M. González Barahona \\
+@jgbarah}
+\institute[URJC]{Universidad Rey Juan Carlos \\
+  \url{http://github.com/jgbarah/presentations}}
 
 \date{6 de abril de 2018}
 
@@ -85,6 +88,15 @@
       y qué piensa hacer en \\
       los (al menos) siguientes 20''\\
       %\end{quote}
+    \end{center}
+  }
+\end{frame}
+
+\begin{frame}
+
+  {\em \Huge
+    \begin{center}
+      Uffff
     \end{center}
   }
 \end{frame}
