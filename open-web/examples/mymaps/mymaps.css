@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    margin: 0;
+    }
+html, body, #mymap {
+    height: 100%;
+    }
+
+div#form {
+  background-color: white;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  z-index: 2;
+}
+div#form input {
+  width: 200px;
+}
