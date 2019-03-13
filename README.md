@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Presentations
 
-You can use the [editor on GitHub](https://github.com/jgbarah/presentations/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Random presentations by yours truly, both in Spanish and English.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Presentaciones varias, de su seguro servidor, tanto en español como en inglés.
 
-### Markdown
+Social aspects of technology:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Internet: pasado y futuro: [transpas](internet-pasado-futuro/transpas.pdf) (Spanish)
+* Lección magistral: [transpas](leccion-magistral/transpas.pdf) (Spanish)
+* La tecnología no es neutra: 
+  [transpas T3chfest 2018](tecnologia-no-neutra/tecnologia-no-neutra-t3chfest-2018.pdf)
+  [transpas curso UNED 2018](tecnologia-no-neutra/tecnologia-no-neutra-uned-2018.pdf) 
+  (Spanish)
+* La tecnología te controla: [transpas](tecnologia-te-controla/transpas-2018-05.pdf) (Spanish)
 
-```markdown
-Syntax highlighted code block
+Technology:
 
-# Header 1
-## Header 2
-### Header 3
+* Open web: [maps examples](open-web) (English)
+* [Building Python packages](pip-packages) (English)
 
-- Bulleted
-- List
+Academic and research:
 
-1. Numbered
-2. List
+* Learning from errors: [slides](learning-from-errors/slides.pdf) (English)
+* Technical lag: [slides](tech-lag/slides.pdf) (English)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jgbarah/presentations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
