@@ -9,20 +9,37 @@ HTML5 y otras tecnologías relacionadas están incrementando considerablemente l
 
 ## Maps
 
-* [Simple map](examples/mymaps/mymaps-1.html)
-  ([code](https://github.com/jgbarah/presentations/open-web/examples/mymaps/mymaps-1.html))
+* [Yet another map](examples/mymaps/mymaps-1.html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/mymaps/mymaps-1.html)).
 
-* [Simple map](examples/mymaps/mymaps-2.html)
-  ([code](https://github.com/jgbarah/presentations/open-web/examples/mymaps/mymaps-2.html))
+* [Click to coordinate](examples/mymaps/mymaps-2.html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/mymaps/mymaps-2.html)).
 
-* [Simple map](examples/mymaps/mymaps-3.html)
-  ([code](https://github.com/jgbarah/presentations/open-web/examples/mymaps/mymaps-3.html))
-
-
+* [Finding my place in the world](examples/mymaps/mymaps-3.html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/mymaps/mymaps-3.html)).
+  Check this one with a mobile.
+    
 ## Virtual reality
+
+* [Geometry](examples/vr/vr-1,html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/vr/vr-1.html)).
+
+* [Robots in the fog](examples/vr/vr-2,html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/vr/vr-2.html)).
 
 ## Augmented reality
 
+* [Something is moving near you](examples/ar/ar-1,html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/ar/ar-1.html)).
+  Check this one with a mobile, be sure you allow the camera to work,
+  and point it to the marker.
+  
+* [There be robots...](examples/ar/ar-2,html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/ar/ar-2.html)).
+  Check this one with a mobile, be sure you allow the camera to work,
+  and point it to the marker.
+
+Marker: [PNG](pattern-hiro.png), [PDF](pattern-hiro-2up.pdf)
 
 
 ## Links
