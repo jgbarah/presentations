@@ -7,7 +7,25 @@ HTML5 y otras tecnologías relacionadas están incrementando considerablemente l
 
 ## Playing with the camera
 
-## Maps
+Browsers provide an API for accessing devices, such as the camera.
+
+Building stuff:
+
+* [Camera demo](examples/camera/camera.html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/camera/camera.html)).
+
+Some links:
+
+* [ASCII camera](https://andrei.codes/ascii-camera/)
+  ([code](https://github.com/idevelop/ascii-camera))
+  
+* [WebRTC Basics in HTML Rocks](https://www.html5rocks.com/en/tutorials/webrtc/basics/)
+
+## Building maps
+
+Browsers provide an API for location.
+
+Building stuff:
 
 * [Yet another map](examples/mymaps/mymaps-1.html)
   ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/mymaps/mymaps-1.html)).
@@ -18,37 +36,70 @@ HTML5 y otras tecnologías relacionadas están incrementando considerablemente l
 * [Finding my place in the world](examples/mymaps/mymaps-3.html)
   ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/mymaps/mymaps-3.html)).
   Check this one with a mobile.
+
+Some links:
+
+* [Leaflet](https://leafletjs.com/).
     
 ## Virtual reality
 
-* [Geometry](examples/vr/vr-1,html)
+Browsers provide WebVR, based on WebGL.
+
+Building stuff:
+
+* [Geometry](examples/vr/vr-1.html)
   ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/vr/vr-1.html)).
 
-* [Robots in the fog](examples/vr/vr-2,html)
+* [Robots in the fog](examples/vr/vr-2.html)
   ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/vr/vr-2.html)).
+
+Some links:
+
+* [AFrame](https://aframe.io)
+
+* [AFrame Playground](https://jgbarah.github.io/aframe-playground/)
 
 ## Augmented reality
 
-* [Something is moving near you](examples/ar/ar-1,html)
+Building stuff:
+
+* [Something is moving near you](examples/ar/ar-1.html)
   ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/ar/ar-1.html)).
   Check this one with a mobile, be sure you allow the camera to work,
   and point it to the marker.
   
-* [There be robots...](examples/ar/ar-2,html)
+* [There be robots...](examples/ar/ar-2.html)
   ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/ar/ar-2.html)).
   Check this one with a mobile, be sure you allow the camera to work,
   and point it to the marker.
 
-Marker: [PNG](pattern-hiro.png), [PDF](pattern-hiro-2up.pdf)
+Marker: [PNG](examples/ar/pattern-hiro.png),
+[PDF](examples/ar/pattern-hiro-2up.pdf)
+
+Some links:
+
+* [AFrame](https://aframe.io)
+
+* [AR.js](https://github.com/jeromeetienne/ar.js)
+
+* [AFrame Playground](https://jgbarah.github.io/aframe-playground/)
 
 
-## Links
+## The Open Web
+
+Open standards, open source software (free software),
+decentralization, hackability...
+
+* [What is the open web and why is it important?](https://www.yearofopen.org/november-open-perspective-what-is-open-web/what-is-the-open-web-and-why-is-it-important-submitted-by-mark-surman-executive-director-of-the-mozilla-foundation/),
+  by Mark Surman (Mozilla).
+
+* [What Is the Open Web and Why Is It Important?](http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html),
+  by Brad Neuberg.
+
+## Some other (interesting) stuff
 
 All of these are free, open source software HTML5 libraries and applications:
 
-* WebVR
-
-  * [AFrame Playground](https://jgbarah.github.io/aframe-playground/)
 
 * Games
 
@@ -60,7 +111,7 @@ All of these are free, open source software HTML5 libraries and applications:
 
   * [Vue Chess](https://github.com/gustaYo/vue-chess)
 
-  * FreeCivWeb](https://freecivweb.org/), with [source code](https://github.com/freeciv/freeciv-web)
+  * [FreeCivWeb](https://freecivweb.org/), with [source code](https://github.com/freeciv/freeciv-web)
 
   * [OpenLara](http://xproger.info/projects/OpenLara/), with [source code](https://github.com/XProger/OpenLara)
 
@@ -69,3 +120,14 @@ All of these are free, open source software HTML5 libraries and applications:
   * [Plyr](https://plyr.io/), with [source code](https://github.com/sampotts/plyr)
 
   * [Video.js](https://videojs.com/), with [source code](https://github.com/videojs/video.js)
+ 
+* Really cool stuff
+
+  * [Windows 95 in your browser](https://win95.ajf.me/).
+  Windows 95 running on [EM-DOSBox](https://github.com/dreamlayers/em-dosbox),
+  a JavaScript version of [DOSBox](https://www.dosbox.com/).
+  The transpiling from C/C++ (DOSBox) to JavaScript (EM-DOSBox)
+  is done with [Emscripten](https://emscripten.org/)
+  an [LLVM](http://llvm.org/)-based system to compile to asm.js
+  and WebAssembly.
+  
