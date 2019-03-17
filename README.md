@@ -16,7 +16,7 @@ Social aspects of technology:
 
 Technology:
 
-* Open web: [maps examples](open-web) (English)
+* [Open web](open-web) (English)
 * [Building Python packages](pip-packages) (English)
 
 Academic and research:
