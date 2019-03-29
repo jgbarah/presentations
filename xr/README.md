@@ -4,6 +4,8 @@ New standards, supported by most modern browsers,
 allow for building virtual reality and augmented
 reality scenes and applications.
 
+Short link: [http://bit.ly/xraula](http://bit.ly/xraula)
+
 ## Virtual reality
 
 Browsers provide WebVR, based on WebGL.
@@ -11,10 +13,13 @@ Browsers provide WebVR, based on WebGL.
 Building stuff:
 
 * [Geometry](examples/vr/vr-1.html)
-  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/vr/vr-1.html)).
+  ([code](https://github.com/jgbarah/presentations/tree/master/xr/examples/vr/vr-1.html)).
 
 * [Robots in the fog](examples/vr/vr-2.html)
-  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/vr/vr-2.html)).
+  ([code](https://github.com/jgbarah/presentations/tree/master/xr/examples/vr/vr-2.html)).
+
+* [Robots in the fog (URJC edition)](examples/vr/vr-3.html)
+  ([code](https://github.com/jgbarah/presentations/tree/master/xr/examples/vr/vr-2.html)).
 
 Some links:
 
@@ -27,12 +32,12 @@ Some links:
 Building stuff:
 
 * [Something is moving near you](examples/ar/ar-1.html)
-  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/ar/ar-1.html)).
+  ([code](https://github.com/jgbarah/presentations/tree/master/xr/examples/ar/ar-1.html)).
   Check this one with a mobile, be sure you allow the camera to work,
   and point it to the marker.
   
 * [There be robots...](examples/ar/ar-2.html)
-  ([code](https://github.com/jgbarah/presentations/tree/master/open-web/examples/ar/ar-2.html)).
+  ([code](https://github.com/jgbarah/presentations/tree/master/xr/examples/ar/ar-2.html)).
   Check this one with a mobile, be sure you allow the camera to work,
   and point it to the marker.
 
@@ -47,3 +52,4 @@ Some links:
 
 * [AFrame Playground](https://jgbarah.github.io/aframe-playground/)
 
+* [Hyper-reality](https://youtu.be/YJg02ivYzSs)
