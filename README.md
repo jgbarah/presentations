@@ -17,6 +17,7 @@ Social aspects of technology:
 Technology:
 
 * [Open web](open-web) (English)
+* [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
 
 Academic and research:

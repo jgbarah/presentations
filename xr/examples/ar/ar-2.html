@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>AR with drones...</title>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs>
+      <a-assets>
+        <img id="t3chfest" src="t3chfest.png">
+        <a-asset-item id="drone" src="mech_drone/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-box position='0 0.2 -1' material='color: grey;' scale="3 .4 1"></a-box>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" src="#t3chfest"></a-plane>
+
+      <a-entity position="0 .1 0" gltf-model="#drone" animation-mixer
+                scale="0.01 0.01 0.01"
+                animation="property: rotation; dur: 10000; to:0 360 0; loop: true">
+      </a-entity>
+
+      <a-light type="ambient" color="grey"></a-light>
+      <a-light type="point" intensity="2" position="-2 2 4"></a-light>
+
+      <a-marker-camera preset="hiro"></a-marker-camera>
+
+    </a-scene>
+  </body>
+</html>
