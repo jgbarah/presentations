@@ -24,6 +24,7 @@ Technology:
 
 Academic and research:
 
+* Can software be healthy?: [slides](healthy-sw/slides.pdf) (English)
 * Learning from errors: [slides](learning-from-errors/slides.pdf) (English)
 * Technical lag: [slides](tech-lag/slides.pdf) (English)
 
