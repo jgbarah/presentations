@@ -1,0 +1,33 @@
+
+
+Abstract:
+
+ Health, as a metaphor, is often applied to software. At first sight, it is a tempting one. Everyone would like its software projects and products to be healthy. If some project is not healthy, something is wrong with it, and maybe whatever is wrong can be detected and fixed. This leads to the idea that software health, or indicators of being healthy, could be monitored, and policies to increase the health of a project be put in place and tracked. However, to which extent can the health metaphor be applied to software? What does it mean for a software product, or for the project producing it, to be "healthy"? The health metaphor seems to imply that there is some "ideal" state in which every software should be. If they are not in it, well, they are ill, and should take measures to be healed. But how can we define this ideal state? And if we could, does it correspond to some real situation? The talk will explore this path, by comparing software (product and project) health with the concept of software quality. By focusing on free, open source software, where many quality models for projects have been proposed, we will explore if we can learn some lessons that could be useful when discussing software health. Based on them, we will try to answer the question "what does it mean to be healthy?" for software products and projects.
+ 
+
+
+
+
+Starting point:
+
+- Methodologies for increasing quality: CMM and derivatives
+
+Don't work if you cannot mandate the development process
+
+- Methodologies for measuring quality: 
+
+Allow you to have self-aware communities, but also useful for third parties.
+
+Instead of having "one good way of doing it", "let the market work"
+
+
+OSS Business Readiness Rating
+
+OpenBRR
+
+Open source software assesment methodologies:
+ https://en.wikipedia.org/wiki/Open-source_software_assessment_methodologies
+
+https://www.academia.edu/7067012/Comparing_Assessment_Methodologies_for_Free_Open_Source_Software_OpenBRR_and_QSOS
+
+Open source maturity model
