@@ -107,7 +107,7 @@
   }
 
   \begin{flushright}
-    {\small Adapted from a well kwnown joke \\
+    {\small Adapted from a well known joke \\
     by Eugenio (Spanish humorist). \\}
   \end{flushright}
 \end{frame}
@@ -120,7 +120,7 @@
     \begin{quote}
       Software should behave \\
       according to requirements, \\
-      be cheap to mantain, \\
+      be cheap to maintain, \\
       be easy to use, \\
       have good performance, \\
       ... \\
@@ -139,8 +139,8 @@
   In most cases...
   
   \begin{itemize}
-  \item Functionality: shallow verificaton
-  \item Requirements: from inexistent to incomplete
+  \item Functionality: shallow verification
+  \item Requirements: from nonexistent to incomplete
   \item Maintainability: very expensive
   \item Usability: many facets
   \item Performance: only a relative target
@@ -286,6 +286,20 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{The evaluators}
+
+  \begin{center}
+  Different goals / interests
+
+  mean
+
+  different definitions of ``good''
+  \end{center}
+    
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
   \frametitle{And we still have the context...}
 
   Software is not used in a vacuum:
@@ -299,20 +313,6 @@
   \end{itemize}
 \end{frame}
 
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{The evaluators}
-
-  \begin{center}
-  Different goals / interests
-
-  mean
-
-  different definitions of ``good''
-  \end{center}
-    
-\end{frame}
 
 %%-----------------------------------------
 %%-----------------------------------------
@@ -343,11 +343,11 @@
 \end{frame}
 
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Qualoss}
+%% %%-----------------------------------------
+%% \begin{frame}[fragile]
+%%   \frametitle{Qualoss}
   
-\end{frame}
+%% \end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -392,12 +392,12 @@
 
 \end{frame}
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{OMM}
+%% %%-----------------------------------------
+%% \begin{frame}[fragile]
+%%   \frametitle{OMM}
 
-  QualiPSo OpenSource Maturity Model
-\end{frame}
+%%   QualiPSo OpenSource Maturity Model
+%% \end{frame}
 
 
 %%-----------------------------------------
@@ -427,27 +427,30 @@
 %%-----------------------------------------
 \begin{frame}[fragile]
 
+  
   {\em
     \begin{quote}
       ``A set of \textbf{characteristics} \\
-      of a software project \\
-      making it capable of producing \\
+      of a software \textbf{project} \\
+      determining its capability for producing \\
       \textbf{software of good quality}, \\
-      according to certain \textbf{criteria}, \\
-      in a \textbf{sustainable} way'' \\
+      according to certain \textbf{criteria}
   \end{quote}
   }
   
 \end{frame}
 
+
 %%-----------------------------------------
 \begin{frame}[fragile]
   \frametitle{What is software health?}
 
+  A concept applied to a \textbf{project}:
+  
   \begin{itemize}
   \item Criteria to define quality
   \item Characteristics that allow for that quality
-  \item Timeframe for sustainability
+  \item Time spot for measuring
   \end{itemize}
 \end{frame}
 
@@ -479,10 +482,13 @@
 \begin{frame}[fragile]
   \frametitle{The causes for health}
 
+  {\em
   The really interesting matter \\
   is to know the causes \\
   for variation in indicators \\
-
+  }
+  \vspace{.5cm}
+  
   Example: unfixed bug reports are minimized by good code review
   
 \end{frame}
@@ -490,30 +496,54 @@
 
 %%-----------------------------------------
 %%-----------------------------------------
-\section{The future}
+\section{Some ideas}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
   \frametitle{On the shoulders of giants}
 
-  The importance of dependencies
+  Systems are composed of many modules:
+
+  \begin{itemize}
+  \item Dependencies matter
+  \item Overall health dependent on health of all components
+  \item In some cases, dependent on health of the most unhealthy component
+  \item Projects and communities are interdependent
+  \end{itemize}
+
+  Assessing the overall health of a complete system
   
 \end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Evolution}
+  \frametitle{Making decisions for tomorrow}
 
-  Making decisions for tomorrow
-  
+  Many systems are in production for many years:
+
+  \begin{itemize}
+  \item Prediction on future health
+  \item Not all aspects are equally relevant \\
+    (example: fixing bugs vs. new functionality)
+  \item Important: understanding dynamics \\
+    (extending past to future is not good enough)
+  \end{itemize}
 \end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
   \frametitle{Integrating metrics with development}
 
-  Metrics as a part of continuous integration
-  
+  Can health be yet another factor to consider?
+
+  \begin{itemize}
+  \item It could be an indicator for every stakeholder
+  \item Computed frequently, so that it is up to date
+  \item Published widely, so that everyone is aware
+  \end{itemize}
+
+  Include health in the data for decision making
+
 \end{frame}
 
 %%-----------------------------------------
@@ -526,15 +556,23 @@
   \item Users
   \end{itemize}
 
+  \vspace{.5cm}
+
+  \begin{flushright}
   Health for different actors \\
   for different purposes \\
+  \end{flushright}
   
 \end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{CHAOSS}
 
+  \begin{center}
+  \includegraphics[height=3.2cm]{figs/chaoss}
+  \end{center}  
+
+  \url{http://chaoss.community}
   
 \end{frame}
 
@@ -575,12 +613,14 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Finding evidence}
+  \frametitle{Beyond opinions}
 
-  Evidence that the inditicator shows
+  Evidence that the indicator shows
   deviation from healthy condition
 
-  Evidence that mitigation::
+  \vspace{.5cm}
+  
+  Evidence of mitigation:
 
   \begin{itemize}
   \item condition go back to healthy
@@ -590,12 +630,33 @@
 \end{frame}
 
 %%-----------------------------------------
+%%-----------------------------------------
+\section{Concluding...}
+
+%%-----------------------------------------
 \begin{frame}[fragile]
 
+  {\Large
   \begin{center}
-    Can we do this in non-trivial cases?
+    Can we do this \\
+    in non-trivial cases?
   \end{center}
+  }
   
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+
+  {\large
+  \begin{center}
+    Software health may provide \\
+    a good framework \\
+    for structuring research, \\
+    producing useful analysis, \\
+    and producing actionable outputs \\
+  \end{center}
+  }  
 \end{frame}
 
 %%-----------------------------------------
@@ -613,7 +674,7 @@
 
 \vspace{.4cm}
 
-Some rights reserverd. This document is distributed under the terms of the Creative Commons License ``Attribution-ShareAlike 4.0'',
+Some rights reserved. This document is distributed under the terms of the Creative Commons License ``Attribution-ShareAlike 4.0'',
 available in \\
 {\scriptsize \url{http://creativecommons.org/licenses/by-sa/4.0/}} \\
 
