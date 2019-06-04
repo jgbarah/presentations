@@ -22,6 +22,10 @@ Technology:
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
 
+Free / open source software:
+
+* [Licencias de software libre](licencias-sobre) (Spanish)
+
 Academic and research:
 
 * Can software be healthy?: [slides](healthy-sw/slides.pdf) (English)
