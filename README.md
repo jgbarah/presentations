@@ -24,7 +24,7 @@ Technology:
 
 Free / open source software:
 
-* [Licencias de software libre](licencias-sobre) (Spanish)
+* [Licencias de software libre](licencias-sobre/transpas.pdf) (Spanish)
 
 Academic and research:
 
