@@ -1,0 +1,278 @@
+%
+% $Id: $
+%
+%
+% Compilar a .pdf con LaTeX (pdflatex)
+% Es necesario instalar Beamer (paquete latex-beamer en Debian)
+%
+
+%
+% Gráficos:
+% Los gráficos pueden suministrarse en PNG, JPG, TIF, PDF, MPS
+% Los EPS deben convertirse a PDF (usar epstopdf)
+%
+
+\documentclass[17pt,aspectratio=169]{beamer}
+\usetheme[orchid]{Hannover}
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{format/libresoft-bg-soft.png}}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage{amssymb} % Simbolos matematicos
+
+%\definecolor{libresoftgreen}{RGB}{162,190,43}
+%\definecolor{libresoftblue}{RGB}{0,98,143}
+
+%\setbeamercolor{titlelike}{bg=libresoftgreen}
+
+%% Metadatos del PDF.
+%% \hypersetup{
+%%   pdftitle={La tecnología no es neutra},
+%%   pdfauthor={Jesús M. González Barahona},
+%%   pdfcreator={GSyC/LibreSoft, Universidad Rey Juan Carlos},
+%%   pdfproducer=PDFLaTeX,
+%%   pdfsubject={},
+%% }
+%%
+
+\newcommand\YUGE{\fontsize{48}{60}\selectfont}
+
+\AtBeginSection[]
+{
+  {
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{\secimage}}
+    \begin{frame}<beamer>
+
+      \begin{center}
+        {\YUGE\bf\insertsection}
+      \end{center}
+    \end{frame}
+  }
+  \renewcommand{\secimage}{figs/bookpages}
+}
+
+% Pixbay
+% NikolayFrolochkin
+% https://pixabay.com/en/book-reading-library-literature-1261800/
+% License: CC0 Creative Commons
+\newcommand{\secimage}{figs/bookpages}
+
+\begin{document}
+
+\title{Publicación abierta}
+%\subtitle{}
+\author{Jesús M. González Barahona}
+\institute{Correo: jgb@gsyc.es ~~~~ Twitter: @jgbarah2 \\
+  Universidad Rey Juan Carlos \\ }
+
+\date{Ética en la investigación \\
+  Actividad formativa EID, Universidad Rey Juan Carlos \\
+  Móstoles, 6 de junio de 2019\\
+{\small \url{https://jgbarah.github.io/presentations}} \\}
+
+\frame{
+\maketitle
+}
+%% \begin{center}
+%% \includegraphics[width=6cm]{format/gsyc-urjc}
+%% \end{center}
+
+%% \begin{frame}
+
+%%   {\Large
+%%     \tableofcontents
+%%   }
+
+%% \end{frame}
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Definiciones}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{BOAI}
+
+Budapest Open Access Initiative, 2002
+
+\vspace{.5cm}
+
+\begin{quote}
+  ``world-wide electronic distribution of the peer-reviewed journal literature and completely free and unrestricted access''
+\end{quote}
+
+\begin{flushright}
+  {\small \url{https://budapestopenaccessinitiative.org}}
+\end{flushright}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{BDoOA}
+
+Berlin Declaration on Open Access, 2003
+
+\vspace{.3cm}
+
+\begin{quote}
+  ``El (los) autor(es) [...] deben garantizar el derecho gratuito, irrevocable y mundial de acceder a el trabajo, lo mismo que licencia para copiarlo, usarlo, distribuirlo, transmitirlo y exhibirlo públicamente, y para hacer y distribuir trabajos derivados [...]"
+\end{quote}
+
+
+\begin{flushright}
+  {\small \url{https://openaccess.mpg.de/Berlin-Declaration}}
+\end{flushright}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Condiciones}
+
+\begin{itemize}
+\item Derecho de acceso (consulta)
+\item Derecho de copia
+\item Derecho de trabajos derivados
+\item Obra y materiales en formatos electrónicos ``adecuados''
+\item Depósito de la obra y materiales complementarios \\
+  en un archivo abierto
+\end{itemize}
+
+Todo, con atribución de autoría
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Materiales cubiertos}
+
+\begin{itemize}
+\item resultados de investigación (artículos)
+\item datos crudos y metadatos
+\item materiales fuente (nots)
+\item representaciones digitales (gráficos, multimedia)
+\item programas de ordenador
+\end{itemize}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Archivo abierto}
+
+\begin{itemize}
+\item Estándares de acceso adecuados \\
+  (ejemplo: Open Archive Definitions)
+\item mantenido por una organización ``fiable''
+\item vocación de distribucion universal, \\
+  interoperabilidad, \\
+  archivo a largo plazo
+\end{itemize}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Ventajas, problemas...}
+
+% Publicación abierta y curriculum
+% Ética científica
+% Acceso al conocimiento
+% Publicidad
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Tipos de acceso abierto}
+
+\begin{frame}
+
+\begin{itemize}
+\item Gold
+\item Green
+\item Hybrid
+\item Bronze
+\item Diamond/platinum
+\item Black
+\end{itemize}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Conceptos relacionados}
+
+\begin{itemize}
+\item Preprints
+\item Autoarchivo
+\item DOI
+\item ORCID
+\item Índices accesibles: Scholar, DBLP, Dialnet
+\end{itemize}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Licencias}
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Modelos de sostenibilidad}
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Recursos}
+
+%%---------------------------------------------------------------
+\begin{frame}
+
+  \begin{itemize}
+  \item Wikipedia \\
+    {\small \url{https://en.wikipedia.org/wiki/Open_access}}
+  \item Sherpa/Romeo \\
+    {\small \url{http://sherpa.ac.uk/romeo/index.php}}
+  \item EU Comission policy on open science \\
+    {\small \url{https://ec.europa.eu/research/openscience/}}
+  \end{itemize}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Ejemplo: TIC}
+
+
+%%---------------------------------------------------------------
+%%---------------------------------------------------------------
+\section{Situación en la URJC}
+
+%%---------------------------------------------------------------
+% LICENCIA DE REDISTRIBUCION DE LAS TRANSPAS
+\frame{
+~
+\vspace{3cm}
+
+\begin{flushright}
+{\small
+\copyright 2019 Jesús M. González Barahona. \\
+
+  Algunos derechos reservados. \\
+  Este artículo se distribuye bajo la licencia \\
+  ``Reconocimiento-CompartirIgual 3.0 España'' \\
+  de Creative Commons, \\
+  disponible en \\
+}
+{\footnotesize
+  \url{https://creativecommons.org/licenses/by-sa/3.0/es/} \\
+}
+\end{flushright}
+}
+
+\end{document}
