@@ -22,9 +22,10 @@ Technology:
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
 
-Free / open source software:
+Free / open source software and open access and all that:
 
 * [Licencias de software libre](licencias-sobre/transpas.pdf) (Spanish)
+* [Publicación abierta](publicacion-abierta/transpas.pdf) (Spanish)
 
 Academic and research:
 
