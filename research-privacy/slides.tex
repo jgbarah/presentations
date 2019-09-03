@@ -52,7 +52,7 @@
 \institute[URJC]{Universidad Rey Juan Carlos \\
   @jgbarah ~~~~~ \url{http://github.com/jgbarah/presentations}}
 
-\date[Seminar on open source ecosystems \\ Uni. Mons (Belgium), September 4th 2019}
+\date{SECO-ASSIST 2019 Research Seminar \\ Uni. Mons (Belgium), September 4th 2019}
 
 \begin{document}
 
@@ -76,6 +76,23 @@
 \definecolor{lightred}{HTML}{FF5C5C}
 \definecolor{lightblue}{HTML}{89AFCF}
 \definecolor{lightbrown}{HTML}{B58868}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Disclamer}
+
+  \begin{center}
+  {\Large
+    I'm not a lawyer.\\
+    \vspace{.8cm}
+    I don't have any \\
+    formal training in law.\\
+    \vspace{.8cm}
+    This is not legal advice.\\
+  }
+  \end{center}
+  
+\end{frame}
 
 %%-----------------------------------------
 %%-----------------------------------------
@@ -142,6 +159,89 @@
   \item \href{https://www.oag.ca.gov/privacy/ccpa}{California Consumer Privacy Act}
   \end{itemize}
 \end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Is research exempt?}
+
+  Processing of personal data should be:
+
+  \begin{itemize}
+  \item lawful,
+  \item fair,
+  \item and transparent.
+  \end{itemize}
+
+  \begin{flushright}
+    GDPR, Preface (39)
+  \end{flushright}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Lawful?}
+
+  \begin{itemize}
+  \item explicit consent: difficult when mining repositories
+  \item task in the public interest (public instititutions)
+  \item legitimate interest (non-public institutoions)
+  \end{itemize}
+
+  \begin{flushright}
+    \href{https://www.ukri.org/files/about/policy/ukri-gdpr-faqs-pdf}{GDPR and Research: An Overview for Researchers}, UK Research and Innovation
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Fair, transparent?}
+
+  Fair, transparent:
+  
+  \begin{quote}
+  Processing for [...] research purposes, shall be subject to appropriate safeguards, in accordance with this Regulation, for the rights and freedoms of
+the data subject.
+  \end{quote}
+
+  \begin{flushright}
+    GDPR, Article 89
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\vspace{-.3cm}
+  {\small \em
+    Those safeguards shall ensure that technical and organisational measures are in place in particular in order to ensure respect for the principle of data minimisation. Those measures may include pseudonymisation [...]. Where those purposes can be fulfilled by further processing which
+does not permit [...] the identification of data subjects, those purposes shall be fulfilled in that manner.
+  }
+
+  \begin{flushright}
+    GDPR, Article 89
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Is research exempt?}
+
+  Publication of personal data: \\
+  \vspace{.2cm}
+
+  {\em
+    Sharing personal data should be \\
+    through managed processes, \\
+    with access and usage controls \\
+    to protect from re-identification
+  }
+  \vspace{.2cm}
+  \begin{flushright}
+    Potential problem for publication of results, \\
+    when they involve personal data (eg: datasets) \\
+  \end{flushright}
+\end{frame}
+
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -342,6 +442,65 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{GDPR approach}
+
+  Data protection by design (DPbD:\\
+
+  \vspace{.5cm}
+  \begin{quote}
+    Data  controllers are required  to  implement appropriate technical and organisational measures to give effect to the core data-protection principles of GDPR.
+  \end{quote}
+
+  \begin{flushright}
+  GDPR, Articles 5 and 25
+  \end{flushright}
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{DPbD in research}
+
+  Data protection by design:\\
+
+  \begin{itemize}
+  \item Anonymization / pseudonymization
+  \item data minimization
+  \item cryptography (hashing, encrypting)
+  \item data protection focused service providers \& storage
+  \item procedures for exercising fundamental rights (access, consent)
+  \end{itemize}
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data minimization}
+
+  \begin{quote}
+  (1) Data  processing  must  be  lawful,  fair  and  transparent.It  should  involve  only  data  that  are  necessary  and proportionate to achieve the specific task or purpose for which they were collected
+  \end{quote}
+
+  \begin{flushright}
+    GDPR, Article 5
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data minimization}
+
+  \begin{itemize}
+  \item Collect minimal personal data
+  \item Anonymize and pseudonymize
+  \item Store data securely
+  \item Dispose data when no longer needed
+  \item Limit access to data
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
   \frametitle{Mitigation}
 
   Anonymization, pseudonymization \\
@@ -383,6 +542,25 @@
   \item Data processor: processes personal data on behalf of the controller
   \end{itemize}
     
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data protection office (DPO)}
+
+  \begin{itemize}
+  \item Appointed by controllers and processors \\
+    (eg: usually one in each University)
+  \item Involved in all issues related to protection of personal data
+  \item Data subjects may contact DPO directly
+  \item Good, local point to seek advice for a researcher
+  \end{itemize}
+  
+  \begin{flushright}
+    GDPR, Articles 37,38,39.
+  \end{flushright}
+  }
+  
 \end{frame}
 
 %%-----------------------------------------
@@ -602,7 +780,7 @@ Jesus M. Gonzalez-Barahona <jgb@gsyc.es>
   
   {\footnotesize
     \begin{flushright}
-    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by European Commission
+    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by EC
   \end{flushright}
   }
 \end{frame}
@@ -850,43 +1028,6 @@ Comment: 4343434334
 
 %%-----------------------------------------
 %%-----------------------------------------
-\section{By design}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{GDPR approach}
-
-  Data protection by design (DPbD:\\
-
-  \vspace{.5cm}
-  \begin{quote}
-    Data  controllers are required  to  implement appropriate technical and organisational measures to give effect to the core data-protection principles of GDPR.
-  \end{quote}
-
-  \begin{flushright}
-  GDPR, Articles 5 and 25
-  \end{flushright}
-  
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{DPbD in research}
-
-  Data protection by design:\\
-
-  \begin{itemize}
-  \item Anonymization / pseudonymization
-  \item data minimization
-  \item cryptography (hashing, encrypting)
-  \item data protection focused service providers \& storage
-  \item procedures for exercising fundamental rights (access, consent)
-  \end{itemize}
-  
-\end{frame}
-
-%%-----------------------------------------
-%%-----------------------------------------
 \section{Important details}
 
 %%-----------------------------------------
@@ -902,32 +1043,6 @@ Comment: 4343434334
     (needs special protection) \\
   \end{itemize}
   
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Data minimization}
-
-  \begin{quote}
-  (1) Data  processing  must  be  lawful,  fair  and  transparent.It  should  involve  only  data  that  are  necessary  and proportionate to achieve the specific task or purpose for which they were collected
-  \end{quote}
-
-  \begin{flushright}
-    GDPR, Article 5
-  \end{flushright}
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Data minimization}
-
-  \begin{itemize}
-  \item Collect minimal personal data
-  \item Anonymize and pseudonymize
-  \item Store data securely
-  \item Dispose data when no longer needed
-  \item Limit access to data
-  \end{itemize}
 \end{frame}
 
 %%-----------------------------------------
@@ -961,29 +1076,189 @@ Comment: 4343434334
 \end{frame}
 
 %%-----------------------------------------
-%%-----------------------------------------
-\section{Long term}
-
-%%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{A call for action}
+  \frametitle{Secondary use}
 
-  Maybe we researchers need to work with developers to learn what is legitimate use for them?
+  Usually, we perform secondary use \\
+  (we don't collect data directly from persons) \\
 
-  Maybe developers should specify what is legitimate use for them, in their repositories?
-  
+  \vspace{.5cm}
+
+  Important: check original consent \\
+
+  \vspace{.5cm}
+
+  Explain how data was obtained, \\
+  justify use (legitimate use) \\
+  ensure processing is fair to data subjects \\
 \end{frame}
 
 %%-----------------------------------------
-%%-----------------------------------------
-\section{Children}
+\begin{frame}[fragile]
+  \frametitle{Secondary use}
+
+
+  {\em
+    (47) the legitimate interests of a controller [...] or of a third party, may provide a legal basis for processing, provided that  the  interests  or  the  fundamental  rights  and  freedoms  of  the  data  subject  are  not  overriding,  taking into  consideration  the  reasonable  expectations  of  data  subjects  based  on  their  relationship  with  the controller
+  }
+
+  \begin{flushright}
+    GDPR, Preamble (see also Art. 89)
+  \end{flushright}
+\end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{Data security}
 
-  {\small
+ 
+  \begin{itemize}
+  \item Appropriate  technical \& organisational measures
+  \item Level of security commensurate to risks faced by the  data  subjects
+  \item Prevention of unauthorised access, disclosure, accidental deletion
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data security}
+
+  \begin{center}
+  \includegraphics[width=12cm]{figs/gdpr-data-security}
+  \end{center}  
+  
+  {\footnotesize
+    \begin{flushright}
+    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by EC
+  \end{flushright}
+  }
+ 
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data security}
+
+  \begin{center}
+  \includegraphics[width=12cm]{figs/gdpr-data-security-b}
+  \end{center}  
+  
+  {\footnotesize
+    \begin{flushright}
+    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by EC
+  \end{flushright}
+  }
+ 
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Transfer outside EU}
+
+  Possible (GPDR, Chapter 5)::
+
+  \begin{itemize}
+  \item to countries with ``adequacy  determination''
+  \item when explicit consent is obtained
+  \item when compliant data-transfer agreements are in place
+  \end{itemize}
+
+  Beware of third-party services!!!
+  
+  \begin{flushright}
+    \href{https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en}{Non-EU countries with adequacy determination}
+  \end{flushright}
+ 
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Transfer outside EU}
+
+  \begin{center}
+  \includegraphics[width=12cm]{figs/gdpr-intl-transfers}
+  \end{center}  
+  
+  {\footnotesize
+    \begin{flushright}
+    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by EC
+  \end{flushright}
+  }
+ 
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Archiving}
+
+  Archive personal data \\
+  only as needed for research purposes. \\
+  \vspace{.3cm}
+  Delete it as soon as possible \\
+  (define a maximum retention period). \\
+  \vspace{.3cm}
+  Beware of backups and data in cloud storage.
+  
+  {\footnotesize
+    \begin{flushright}
+    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by EC
+  \end{flushright}
+  }
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Archiving}
+
+But you can keep personal data indefinitely if you ensure it is only for:
+
+\begin{itemize}
+\item archiving purposes in the public interest
+\item scientific or historical research purposes
+\item statistical purposes
+\end{itemize}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Archiving}
+
+  \begin{center}
+    {\Large
+      Open issue: \\
+      archiving for reproduction \\
+    }
+  \end{center}
+
+  \vspace{.5cm}
+  In principle, covered by research exemption, \\
+    but it is not absolute\\
+    
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Collection outside EU}
+
+  Subject to GDPR \\
+  even if data comes from outside EU \\
+  if data controller is based in EU \\
+
+  \vspace{1cm}
+  
+  Of course, compliance with \\
+  the law of the country of collection \\
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Children}
+
+{\small
     \begin{quote}
-  If your research project involves collecting data from children, you must follow the ``EC Guidance note on informed consent'', in  particular the provisions on obtaining  the  consent  of  a  parent/legal representative  and,  where  appropriate,  the  assent  of  the  child. [... ] it  is imperative that any information you address to a child is in age-appropriate and plain language that they  can  easily  understand.
+  If your research project involves collecting data from children, you must follow the ``EC Guidance note on informed consent'', in  particular the provisions on obtaining  the  consent  of  a  parent/legal representative  and,  where  appropriate,  the  assent  of  the  child.
     \end{quote}
 
   \begin{flushright}
@@ -1009,6 +1284,77 @@ The  GDPR establishes special safeguards for children in relation to ``informati
   }
   
 \end{frame}
+
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Call for action}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Researchers \& developers}
+
+  Maybe we researchers need to work \\
+  with developers \\
+  to learn what is legitimate use for them? \\
+  \vspace{.5cm}
+  
+  Maybe developers should specify \\
+  what is legitimate use for them, \\
+  in their repositories? \\
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{An inspiration}
+  
+  \begin{columns}[T]
+    \begin{column}{.58\textwidth}
+      \includegraphics[height=6cm]{figs/user-terms}
+    \end{column}%
+    \hfill%
+    \begin{column}{.40\textwidth}
+      {\footnotesize
+        ~
+        \vspace{3cm}
+        \begin{flushright}
+          \href{https://kantarainitiative.org/confluence/display/infosharing/User+Submitted+Terms+--+UX+and+Interface+V.1}{User Subitted Terms}, by Mary Hooder \\
+          \href{http://customercommons.org/2014/10/27/customer-commons-and-user-submitted-terms/}{Customer Commons and User Submitted Terms} \\
+        \end{flushright}
+      }
+    \end{column}%
+  \end{columns}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A related IEEE WG}
+
+  \begin{center}
+    \includegraphics[width=12cm]{figs/ieee-wg}
+  \end{center}
+
+  \begin{flushright}
+    \href{https://standards.ieee.org/project/7012.html}{Machine Readable Privacy Terms Working Group}
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{FOSS is open for a reason}
+
+  Having the soure code available \\
+  is a conscious decision\\
+  \vspace{.3cm}
+  It could be extended to all data \\
+  related to software development \\
+  (better undestanding of the project) \\
+  \vspace{.3cm}
+  Clarification of intent would help to define legitimate interest and prove ethics compliance
+\end{frame}
+
+
 
 %%-----------------------------------------
 %%-----------------------------------------
