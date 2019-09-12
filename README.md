@@ -34,4 +34,4 @@ Academic and research:
 * Can software be healthy?: [slides](healthy-sw/slides.pdf) (English)
 * Learning from errors: [slides](learning-from-errors/slides.pdf) (English)
 * Technical lag: [slides](tech-lag/slides.pdf) (English)
-* Data mining in the times of GDPR: [slides](research-privacy/slides.pdf) (English)
+* Data mining in the times of GDPR: [slides](research-privacy/slides.pdf), [video](https://youtu.be/IbP6-A76s6A) (English)
