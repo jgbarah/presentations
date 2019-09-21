@@ -641,14 +641,13 @@ Producing a dashboard:
     code review system
   \item sending messages: \\
     async or sync communication systems
-
   \end{itemize}
 \end{frame}
 
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Activity / size (most common cases)}
+\frametitle{Most common cases}
 
   \begin{itemize}
   \item Parameters reflecting activity for a period.
@@ -659,24 +658,18 @@ Producing a dashboard:
 \vspace{.5cm}
 
 \begin{flushright}
-  Difficult to compare between projects
-
-  \vspace{.5cm}
-  
-  Interesting to compare inside project \\
-  (different subprojects, different time frames) \\
+  Difficult to compare between projects \\  
+  Interesting to compare in-project \\
 \end{flushright}
 \end{frame}
 
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Activity / size (many facets)}
+\frametitle{Many facets}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/activity-elastic}
-
-  \url{http://cauldron.io/dashboards/elastic}
   
 \end{center}
 
@@ -685,15 +678,12 @@ Producing a dashboard:
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Activity / size (many facets)}
+\frametitle{Many facets}
 
 \begin{center}
   \includegraphics[height=7cm]{figs/bitergia-analytics-fosdem16}
 \end{center}
 
-\begin{flushright}
-  \url{http://s.bitergia.com/db-fosdem16}
-\end{flushright}
 \end{frame}
 
 %%-------------------------------------------------------
@@ -702,36 +692,25 @@ Producing a dashboard:
 
 %%---------------------------------------------------------------
 \begin{frame}
-\frametitle{How old is code}
+  \frametitle{How old is code?}
+  
+\begin{center}
+  \includegraphics[width=12cm]{figs/linux-files-age}
+\end{center}
+
+[Linux kernel, July 2016, C files by last commit]
+
+\end{frame}
+
+%%---------------------------------------------------------------
+\begin{frame}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/linux-age-c}
 \end{center}
 
-{\Large
 [Linux kernel, July 2016, lines in C files by age]
-}
 
-\begin{flushright}
-  \url{http://linux.biterg.io}
-\end{flushright}
-\end{frame}
-
-%%---------------------------------------------------------------
-\begin{frame}
-\frametitle{How old is code (2)}
-
-\begin{center}
-  \includegraphics[width=12cm]{figs/linux-files-age}
-\end{center}
-
-{\Large
-[Linux kernel, July 2016, C files by last commit]
-}
-
-\begin{flushright}
-  \url{http://linux.biterg.io}
-\end{flushright}
 \end{frame}
 
 %%---------------------------------------------------------------
@@ -742,40 +721,35 @@ Producing a dashboard:
   \includegraphics[width=12cm]{figs/linux-files-first-edit-c}
 \end{center}
 
-{\Large
 [Linux kernel, July 2016, C files by first remaining commit]
-}
 
-\begin{flushright}
-  \url{http://linux.biterg.io}
-\end{flushright}
 \end{frame}
 
 %%---------------------------------------------------------------
 \begin{frame}
-\frametitle{How old is code? drivers/net in Linux}
 
 \begin{columns}[T]
 \begin{column}{.48\textwidth}
 
-  \includegraphics[height=3.3cm]{figs/linux-age-net-wireless-c}
+  \includegraphics[height=3.1cm]{figs/linux-age-net-wireless-c}
 
-  \includegraphics[height=3.3cm]{figs/linux-age-net-ethernet-c}
+  \includegraphics[height=3.1cm]{figs/linux-age-net-ethernet-c}
 
 \end{column}%
 \hfill%
 \begin{column}{.50\textwidth}
 
-  \includegraphics[height=3.3cm]{figs/linux-age-net-usb-c}
+  \includegraphics[height=3.1cm]{figs/linux-age-net-usb-c}
 
-  \includegraphics[height=3.3cm]{figs/linux-age-net-irda-c}
+  \includegraphics[height=3.1cm]{figs/linux-age-net-irda-c}
 
 \end{column}%
 \end{columns}
   
-Age of lines (data of authorship, ``.c'' files) \\
+{\small
+  Age of lines (data of authorship, ``.c'' files in Linux) \\
 From top left, clockwise: Wireless, USB, IRDA Ethernet
-
+}
 \end{frame}
 
 %%-------------------------------------------------------
@@ -785,7 +759,7 @@ From top left, clockwise: Wireless, USB, IRDA Ethernet
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Backlog (evolution over time)}
+\frametitle{Performance (backlog)}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/backlog-issues-elastic}
@@ -803,14 +777,15 @@ Example: backlog of open issues.
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Efficiency}
 
 \begin{center}
-  \includegraphics[height=7cm]{figs/bmiOpenStackSoftware}
+  \includegraphics[height=6.5cm]{figs/bmiOpenStackSoftware}
 \end{center}
 
-Example: closed / opened tickets per quarter
-
+{\small
+Efficiency.
+Example: closed/opened tickets per quarter \\
+}
 \end{frame}
 
 
@@ -828,10 +803,10 @@ Example: closed / opened tickets per quarter
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Code review (time to merge)}
+\frametitle{Review: time to merge}
 
 \begin{center}
-  \includegraphics[height=7.5cm]{figs/processes-crs-nova-time-to-merge}
+  \includegraphics[height=6.5cm]{figs/processes-crs-nova-time-to-merge}
 \end{center}
 
 \end{frame}
@@ -839,18 +814,7 @@ Example: closed / opened tickets per quarter
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Code review (time to merge, metrics)}
-
-\begin{center}
-  \includegraphics[height=7.5cm]{figs/timeopen-review-metrics}
-\end{center}
-
-\end{frame}
-
-%%---------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Code review (time to merge, evolution)}
+\frametitle{Review: time to merge}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/timeopen-review}
@@ -861,7 +825,7 @@ Example: closed / opened tickets per quarter
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Code review (number of versions per review)}
+\frametitle{Versions per review}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/patchsets-per-review}
@@ -872,11 +836,11 @@ Example: closed / opened tickets per quarter
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{The complete coding process}
+\frametitle{The coding process}
 
 \begin{columns}[T]
 \begin{column}{.40\textwidth}
-
+{\footnotesize
   From idea to implementation
   
 \begin{itemize}
@@ -886,11 +850,11 @@ Example: closed / opened tickets per quarter
 \item Automated testing
 \item Commit in code base
 \end{itemize}
-
+}
 \end{column}%
 \hfill%
 \begin{column}{.58\textwidth}
-
+{\footnotesize
   The OpenStack case
 
 \begin{itemize}
@@ -900,23 +864,10 @@ Example: closed / opened tickets per quarter
 \item Automated testing, Jenkins
 \item Commit in code base, Gerrit, Git
 \end{itemize}
-
+}
 \end{column}%
 \end{columns}
 
-\vspace{.4cm}
-
-\begin{center}
-Similar cases: GitHub, GitLab, Atlassian \\
-
-\vspace{.4cm}
-
-{\Large
-  Requires discipline in the developing team \\
-
-  Requires enough traces in the repositories \\
-}
-\end{center}
 \end{frame}
 
 %%-------------------------------------------------------
@@ -926,16 +877,13 @@ Similar cases: GitHub, GitLab, Atlassian \\
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{The many identities of anyone}
 
-{\Large
   \begin{itemize}
   \item The repository level.
   \item The class of repository level.
   \item The project level.
   \item The global level.
   \end{itemize}
-}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/person-profile}
@@ -946,97 +894,23 @@ Similar cases: GitHub, GitLab, Atlassian \\
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Demographics: The aging chart}
+\frametitle{The aging chart}
 
 \begin{center}
   \includegraphics[width=12cm]{figs/aging-openstack}
 \end{center}
 
-{\Large
-\begin{center}
-  Attraction ~~~~~~~~~~~~~~~~ Retention \\
-   Newcomers ~~~~~~~~~~~~~~~~~ Expertise\\
-\end{center}
-}
-
 \end{frame}
 
-%%---------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Demographics: Contributors funnel}
-
-\begin{columns}[T]
-\begin{column}{.49\textwidth}
-
-Communities of volunteers
-
-\begin{itemize}
-\item ``Peripheral'': activities (questions, reporting bugs)
-\item Small contributions: answers, bug fixes \& change proposals
-\item Core: design, feature implementation, bug fixes
-\end{itemize}
-
-\end{column}%
-\hfill%
-\begin{column}{.49\textwidth}
-
-  Inner source
-
-\begin{itemize}
-\item Questions, reports, etc. in public \\
-  (no more coffee machine meetings)
-\item Moving to develop: answers, bug fixes \& change proposals
-\item Core: design, feature implementation, bug fixes, mentorship
-\end{itemize}
-
-\end{column}%
-\end{columns}
-
-%\vspace{.4cm}
-
-\begin{center}
-  {\Large
-  Finding traces, visualizing career evolution \\
-
-  Assessments \& forecasts of available expertise \\
-
-  Identification of success stories \\
-  }
-\end{center}
-\end{frame}
-
-%%---------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Demographics: Mentorship}
-
-{\Large
-
-  \begin{itemize}
-  \item Helping newcomers, helping people from other areas \\
-
-  \item Usually linked to bug fixing and code review \\
-
-  \item Who is helping others to improve their skills? \\
-
-  \item Who are benefiting more from the help of others? \\
-
-  \item Who are newcomers, and who of them are not receiving mentorship? \\
-
-  \item When a newcomer may convert into mentor? \\
-  \end{itemize}
-}
-\end{frame}
 
 %%-------------------------------------------------------
 %%-------------------------------------------------------
-\subsection{Diversity in FOSS development}
+\subsection{Diversity}
 
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Diversity: geographical information (time zones)}
+\frametitle{Time zones}
 
 \begin{center}
   \includegraphics[height=7cm]{figs/elastic-git-tz}
@@ -1051,7 +925,7 @@ Communities of volunteers
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Diversity: geographical information (GitHub profiles)}
+\frametitle{GitHub profiles}
 
 \begin{center}
   \includegraphics[width=11cm]{figs/map-commits-elasticsearch}
@@ -1062,7 +936,7 @@ Communities of volunteers
 %%---------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Diversity: affiliation}
+\frametitle{Affiliation}
 
 \begin{center}
   \includegraphics[width=10cm]{figs/organizations-openstack}
@@ -1078,27 +952,28 @@ Communities of volunteers
 
 %%---------------------------------------------------------------
 \begin{frame}
-\frametitle{Diversity: Apache Pony Factor}
+\frametitle{Apache Pony Factor}
 
-{\large
-In words of Daniel Gruno:
-}
-{\Large
+
+% In words of Daniel Gruno:
+{\small
 \begin{quote}
-  We [the ASF] created a term we have coined ``Pony Factor'' (because ASF is full of ponies, or people who think they are ponies). Pony Factor (PF) shows the diversity of a project in terms of the division of labor among committers in a project. \\
-  \vspace{.5cm}
-  Pony Factor is determined as: \\
+  Pony Factor (PF) shows the diversity of a project in terms of the division of labor among committers in a project. \\
+  \vspace{.2cm}
+  Pony Factor is determined as:
   {\bf ``The lowest number of committers whose total contribution constitutes the majority of the codebase''} \\
 \end{quote}
 }
+\footnotesize{
 \begin{flushright}
-  \url{https://ke4qqq.wordpress.com/2015/02/08/pony-factor-math/}
+  \href{https://ke4qqq.wordpress.com/2015/02/08/pony-factor-math/}{ke4qqq.wordpress.com/2015/02/08/pony-factor-math/}
 \end{flushright}
+}
 \end{frame}
 
 %%---------------------------------------------------------------
 \begin{frame}
-\frametitle{Diversity: Bitergia Elephant Factor}
+\frametitle{Bitergia Elephant Factor}
 
 \begin{center}
 \includegraphics[height=7cm]{figs/elephant}
@@ -1109,15 +984,14 @@ In words of Daniel Gruno:
 
 %%---------------------------------------------------------------
 \begin{frame}
-\frametitle{Diversity: Bitergia Elephant Factor}
+\frametitle{Bitergia Elephant Factor}
 
-{\Large
-
+{\small
 \begin{quote}
-  Projects can benefit from powerful collaborations from companies (elephants). The elephant factor shows the diversity of a project in terms of the division of labor among companies (by mean of developers affiliated with them).
+The elephant factor shows the diversity of a project in terms of the division of labor among companies (by mean of developers affiliated with them).
 
-  \vspace{.5cm}
-  Elephant factor is determined as: \\
+  \vspace{.2cm}
+  Elephant factor is determined as:\\
   {\bf ``The lowest number of companies whose total contribution (in commits by their employees) constitutes the majority of the commits''} \\
 \end{quote}
 }
@@ -1125,8 +999,9 @@ In words of Daniel Gruno:
 
 %%---------------------------------------------------------------
 \begin{frame}
-\frametitle{Diversity: some projects}
+\frametitle{Some projects (2016)}
 
+{\footnotesize
 \begin{tabular}{|l|l|l|l|l|}
   \hline
               & Pony Factor & Elephant Factor & Commits (excl bots) \\ \hline \hline
@@ -1139,89 +1014,82 @@ OpenShift     & 10          & 1               & 15K     \\ \hline
 Docker        & 15          & 1               & 18K     \\ \hline
 Kubernetes    & 12          & 1               & 7K      \\ \hline
 \end{tabular}
-
-\begin{center}
-  [Circa May 2016]
-\end{center}
+}
 \end{frame}
 
-%%---------------------------------------------------------------
-\begin{frame}
-\frametitle{Diversity: Code ``owned''}
+%% %%---------------------------------------------------------------
+%% \begin{frame}
+%% \frametitle{Diversity: Code ``owned''}
 
-\begin{columns}[T]
-\begin{column}{.48\textwidth}
-  \includegraphics[width=5cm]{figs/emiliano_zapata}
+%% \begin{columns}[T]
+%% \begin{column}{.48\textwidth}
+%%   \includegraphics[width=5cm]{figs/emiliano_zapata}
   
-\end{column}%
-\hfill%
-\begin{column}{.50\textwidth}
-  {\Large \em ``The land belongs \\
-    to its workers'' \\
-    \vspace{.4cm}
-    Emiliano Zapata \\
-  }
-\end{column}%
-\end{columns}
+%% \end{column}%
+%% \hfill%
+%% \begin{column}{.50\textwidth}
+%%   {\Large \em ``The land belongs \\
+%%     to its workers'' \\
+%%     \vspace{.4cm}
+%%     Emiliano Zapata \\
+%%   }
+%% \end{column}%
+%% \end{columns}
 
-\end{frame}
+%% \end{frame}
 
-%%---------------------------------------------------------------
-\begin{frame}
-\frametitle{Diversity: Code ``owned''}
+%% %%---------------------------------------------------------------
+%% \begin{frame}
+%% \frametitle{Diversity: Code ``owned''}
 
-{\Large
-  The code changes over time. The current version is ``owned'' by the people who produced it.\\
+%% {\Large
+%%   The code changes over time. The current version is ``owned'' by the people who produced it.\\
 
-  \begin{quote}
-    The code ``belongs'' to those who wrote it.
+%%   \begin{quote}
+%%     The code ``belongs'' to those who wrote it.
 
-  \vspace{.5cm}
-  Zapata factor (work in progress): \\
-  {\bf ``The lowest number of developers for whom the total number of lines of code they ``own'' (were last touched by them) constitutes the majority of the lines of code''} \\
-  \end{quote}
-}
-\end{frame}
+%%   \vspace{.5cm}
+%%   Zapata factor (work in progress): \\
+%%   {\bf ``The lowest number of developers for whom the total number of lines of code they ``own'' (were last touched by them) constitutes the majority of the lines of code''} \\
+%%   \end{quote}
+%% }
+%% \end{frame}
 
-%%---------------------------------------------------------------
-\begin{frame}
-\frametitle{Diversity: Code ``owned''}
+%% %%---------------------------------------------------------------
+%% \begin{frame}
+%% \frametitle{Diversity: Code ``owned''}
 
-  \includegraphics[width=8cm]{figs/linux-authors-pie}
+%%   \includegraphics[width=8cm]{figs/linux-authors-pie}
 
-  [Linux kernel, July 2016, Zapata factor: 200]
-\end{frame}
+%%   [Linux kernel, July 2016, Zapata factor: 200]
+%% \end{frame}
 
-%%---------------------------------------------------------------
-\begin{frame}
-\frametitle{Diversity: Code ``owned''}
+%% %%---------------------------------------------------------------
+%% \begin{frame}
+%% \frametitle{Diversity: Code ``owned''}
 
-{\Large
+%% {\Large
 
-  \begin{quote}
-    The code ``belongs'' to companies who employ developers changing it.
+%%   \begin{quote}
+%%     The code ``belongs'' to companies who employ developers changing it.
 
-  \vspace{.5cm}
-  United Fruit factor (work in progress): \\
-  {\bf ``The lowest number of companies for whom the total number of lines of code they ``own'' (were last touched by their employees) constitutes the majority of the lines of code''} \\
-  \end{quote}
+%%   \vspace{.5cm}
+%%   United Fruit factor (work in progress): \\
+%%   {\bf ``The lowest number of companies for whom the total number of lines of code they ``own'' (were last touched by their employees) constitutes the majority of the lines of code''} \\
+%%   \end{quote}
 
-}
-\end{frame}
+%% }
+%% \end{frame}
 
 %%---------------------------------------------------------------
 \begin{frame}
 \frametitle{Diversity: Gender gap}
 
   \includegraphics[width=12cm]{figs/linux-gender}
-
-  \vspace{.4cm}
   
-  {\Large
     Commits by women: 6.8\% (4 Kcommits) \\
     Women: 9.9\% (330 developers) \\
     Linux kernel, Nov 2015 -- Oct 2016 \\
-}
 
 \end{frame}
 
@@ -1235,7 +1103,6 @@ Kubernetes    & 12          & 1               & 7K      \\ \hline
 \begin{frame}
 \frametitle{Room for improvement}
 
-{\Large
   \begin{itemize}
     \item Many other aspects... explore your own
     \item Refine what is important
@@ -1244,10 +1111,7 @@ Kubernetes    & 12          & 1               & 7K      \\ \hline
     \item Visualization is very important
     \item Higher-order metrics
     \item Simplify results, make them meaningful
-    \item Can we characterize many aspects with \\
-      a small set of metrics?
 \end{itemize}
-}
 
 \end{frame}
 
@@ -1257,14 +1121,13 @@ Kubernetes    & 12          & 1               & 7K      \\ \hline
 \frametitle{Summary}
 
 \begin{center}
-  {\Huge You cannot improve \\
+  You cannot improve \\
     what you cannot measure \\
-  }
 \end{center}
 
-\vspace{1cm}
+\vspace{.2cm}
 \begin{flushright}
-  {\Large Fortunately, you can measure a lot of things...}
+  Fortunately, you can measure a lot of things...
   \vspace{.5cm}
   
   \url{http://chaoss.github.io/grimoirelab} \\
@@ -1279,26 +1142,27 @@ Kubernetes    & 12          & 1               & 7K      \\ \hline
 \begin{frame}
 \frametitle{Credits (1)}
 
+{\footnotesize
 \begin{itemize}
-\item {\small ``Man With Two Hats'' \\
+\item ``Man With Two Hats'' \\
   Statue by Henk Visch, located in Otawa, Canada \\
   Picture by Lezumbalaberenjena in Wikimedia Commons \\
-  License: Public domain \\}
-  {\footnotesize \url{https://commons.wikimedia.org/wiki/File:Man_With_Two_Hats_Ottawa_Statue_by_lezumbalaberenjena.jpg}}
+  License: Public domain \\
+  \url{https://commons.wikimedia.org/wiki/File:Man_With_Two_Hats_Ottawa_Statue_by_lezumbalaberenjena.jpg}
   % two-hats.png
 
-\item {\small ``Crowd at FOSDEM 2008'' \\
+\item ``Crowd at FOSDEM 2008'' \\
   by Jesús Corrius \\
-  License: CC Attribution 2.0 \\}
-  {\footnotesize \url{http://www.flickr.com/photos/jcorrius/2302302707/}}
+  License: CC Attribution 2.0 \\
+  \url{http://www.flickr.com/photos/jcorrius/2302302707/}
   % fosdem-crowd.jpg
 
-\item {\small ``Emiliano Zapata'' \\
-  License: Public Domain} \\
-  %emiliano_zapata.png
+%\item {\small ``Emiliano Zapata'' \\
+%  License: Public Domain} \\
+%  %emiliano_zapata.png
 
 \end{itemize}
-
+}
 \end{frame}
 
 
