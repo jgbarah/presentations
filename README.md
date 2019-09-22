@@ -18,6 +18,7 @@ Social aspects of technology:
 
 Technology:
 
+* [Software development analytics with GrimoireLab](grimoirelab/slides.pdf) (English)
 * [Open web](open-web) (English)
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
@@ -32,6 +33,10 @@ Free / open source software and open access and all that:
 Academic and research:
 
 * Can software be healthy?: [slides](healthy-sw/slides.pdf) (English)
-* Learning from errors: [slides](learning-from-errors/slides.pdf) (English)
 * Technical lag: [slides](tech-lag/slides.pdf) (English)
 * Data mining in the times of GDPR: [slides](research-privacy/slides.pdf), [video](https://youtu.be/IbP6-A76s6A) (English)
+
+Personal experiences:
+
+* Challenges and Learnings from spinning out Bitergia from the university: [slides](research-company/slides.pdf)
+* Learning from errors: [slides](learning-from-errors/slides.pdf) (English)

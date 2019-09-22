@@ -48,6 +48,19 @@
   }
 }
 
+\AtBeginSubsection[]
+{
+  {
+    \begin{frame}<beamer>
+
+      \begin{center}
+        {\Large\bf\insertsection}\\
+        {\large\insertsubsection}\\
+      \end{center}
+    \end{frame}
+  }
+}
+
 \begin{document}
 
 \title[Analytics with GrimoireLab]{Software Development Analytics with GrimoireLab}
@@ -78,7 +91,9 @@
 \begin{frame}
 \frametitle{Our plan today}
 
+{\footnotesize
 \tableofcontents
+}
 \end{frame}
 
 %%---------------------------------------------------------------
@@ -162,16 +177,6 @@ Bitergia:
   \end{flushright}
 \end{frame}
 
-%%---------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Cauldron Alpha}
-
-\begin{center}
-\includegraphics[height=6cm]{figs/cauldron-dashboard}
-\end{center}
-
-\end{frame}
 
 %%---------------------------------------------------------------
 
@@ -179,14 +184,15 @@ Bitergia:
 \frametitle{Cauldron Alpha}
 
 \begin{center}
-\includegraphics[height=6cm]{figs/cauldron-dashboard-2}
+\includegraphics[height=6cm]{figs/cauldron-kibana}
 \end{center}
 
 \end{frame}
 
+
 %%-------------------------------------------------------
 %%-------------------------------------------------------
-\section{Dealing with dynamic complexity}
+\subsection{Dealing with dynamic complexity}
 
 %%---------------------------------------------------------------
 
@@ -444,6 +450,23 @@ Different methods:
 
 %%---------------------------------------------------------------
 
+\begin{frame}
+\frametitle{Different scenarios}
+
+  \begin{itemize}
+  \item JSON dump of a single repo
+  \item Database dump of a collection of repos
+  \item Database with unified identities
+  \item Visualization in an interactive dashboard
+  \item Generation of reports
+  \item Dynamic reports (eg. Pandas notebooks)
+  \item ...
+  \end{itemize}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
 \begin{frame}[fragile]
 \frametitle{Perceval}
 
@@ -594,6 +617,88 @@ Producing a dashboard:
 
 
   \includegraphics[width=12cm]{figs/grimoirelab-slide}
+
+\end{frame}
+
+%%-------------------------------------------------------
+%%-------------------------------------------------------
+\section{Cauldron Alpha}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+%\frametitle{Cauldron Alpha}
+
+\begin{center}
+\includegraphics[height=5cm]{figs/cauldron-start}
+\end{center}
+
+\begin{flushright}
+      \url{https:/alpha.cauldron.io}
+\end{flushright}
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Internals}
+
+\begin{itemize}
+\item Elasticsearch database (data dumps)
+\item MariaDB database (identities)
+\item Django App (frontend)
+\item Python App, on Mordred (workers)
+\item Kibana (visualization)
+\item OpenDistro: integration
+\end{itemize}
+
+\begin{flushright}
+      \url{https:/alpha.cauldron.io}
+\end{flushright}
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+%\frametitle{Cauldron Alpha}
+
+\begin{center}
+\includegraphics[height=7cm]{figs/cauldron-dashboard-start}
+\end{center}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+%\frametitle{Cauldron Alpha}
+
+\begin{center}
+\includegraphics[height=7cm]{figs/cauldron-dashboard}
+\end{center}
+
+\end{frame}
+
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+%\frametitle{Cauldron Alpha}
+
+\begin{center}
+\includegraphics[height=7cm]{figs/cauldron-kibana}
+\end{center}
+
+\end{frame}
+
+%%---------------------------------------------------------------
+
+\begin{frame}
+%\frametitle{Cauldron Alpha}
+
+\begin{center}
+\includegraphics[height=7cm]{figs/cauldron-kibana-2}
+\end{center}
 
 \end{frame}
 
@@ -1121,15 +1226,17 @@ Kubernetes    & 12          & 1               & 7K      \\ \hline
 \frametitle{Summary}
 
 \begin{center}
-  You cannot improve \\
-    what you cannot measure \\
+  If you don't have data \\
+  you're just another person \\
+  with an opinion \\
 \end{center}
 
 \vspace{.2cm}
+  Fortunately, you can have a lot of data...
+  \vspace{.2cm}
+  Unfortunately, having the right data is not easy
+  \vspace{.2cm}
 \begin{flushright}
-  Fortunately, you can measure a lot of things...
-  \vspace{.5cm}
-  
   \url{http://chaoss.github.io/grimoirelab} \\
 \end{flushright}
 
