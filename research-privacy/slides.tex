@@ -16,17 +16,20 @@
 \setbeamertemplate{headline}{}
 \useoutertheme{infolines}
 
+\usepackage{lmodern}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphics}
+\usepackage{multicol}
 %\usepackage{amssymb} % Simbolos matematicos
 %\usepackage[pdfusetitle]{hyperref}
 
-\usepackage{chronosys}
+%\usepackage{chronosys}
 
 %% two slides per page
 %\usepackage{pgfpages}
 %\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+%\usepackage{tikz}
 
 \newcommand\YUGE{\fontsize{48}{60}\selectfont}
 
@@ -46,13 +49,13 @@
 }
 
 
-\title[Data mining \& GDPR]{Data mining in the times of the GDPR}
+\title[MSR \& Privacy]{Mining Software Repositories While Respecting Privacy}
 %\subtitle{}
 \author[Jesus M. Gonzalez-Barahona]{Jesus M. Gonzalez-Barahona}
 \institute[URJC]{Universidad Rey Juan Carlos \\
   @jgbarah ~~~~~ \url{https://jgbarah.github.io/presentations}}
 
-\date{SECO-ASSIST 2019 Research Seminar \\ Uni. Mons (Belgium), September 4th 2019}
+\date{Mining Software Repositories Conference \\ Educational Track, June 29th 2020}
 
 \begin{document}
 
@@ -63,25 +66,21 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% lista de temas                                               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%-----------------------------------------
+\begin{frame}
+  \frametitle{The plan}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\end{frame}
 
-
-\definecolor{lightviolet}{HTML}{F4AFF4}
-\definecolor{lightorange}{HTML}{FFA17F}
-\definecolor{lightgreen}{HTML}{98FB98}
-\definecolor{lightred}{HTML}{FF5C5C}
-\definecolor{lightblue}{HTML}{89AFCF}
-\definecolor{lightbrown}{HTML}{B58868}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
   \frametitle{Disclamer}
 
-  \begin{center}
+\begin{columns}[T]
+\begin{column}{.78\textwidth}
   {\Large
     I'm not a lawyer.\\
     \vspace{.8cm}
@@ -90,7 +89,12 @@
     \vspace{.8cm}
     This is not legal advice.\\
   }
-  \end{center}
+\end{column}%
+\hfill%
+\begin{column}{.20\textwidth}
+    \includegraphics[height=\textwidth]{figs/signal-caution}
+\end{column}%
+\end{columns}
   
 \end{frame}
 
@@ -104,6 +108,7 @@
 
   \begin{quote}
     Should we worry \\
+    (about data privacy) \\
     when we research \\
     based on data \\
     extracted from \\
@@ -130,6 +135,143 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{Ethics}
+
+  \begin{itemize}
+  \item Ethics recommendations in our field \\
+  \item Ethics rules by our funders
+  \item Ethics committees in our institutions
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Ethics: ICT research principles}
+
+  \begin{itemize}
+  \item stakeholders perspectives
+  \item respect for persons
+  \item beneficience
+  \item justice: fairness and equity
+  \item respect for law and public interest
+  \end{itemize}
+
+  \begin{flushright}
+    {\footnotesize
+      \href{https://www.dhs.gov/sites/default/files/publications/CSD-MenloPrinciplesCORE-20120803_1.pdf}{``The Menlo Report: Ethical Principles Guiding Information and Communication Technology Research''}, \\ Dittrich \& Kenneally (2012) \\
+    }
+  \end{flushright}
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Ethics: SE research core concepts}
+
+  \begin{itemize}
+  \item informed  consent
+  \item scientific  value
+  \item beneficence
+  \item confidentiality
+  \end{itemize}
+
+  \begin{flushright}
+    {\footnotesize
+      \href{http://cogprints.org/3299/1/NRC-44912.pdf}{``Ethical Issues in Empirical Studies of Software Engineering''} \\
+      Singer \& Vinson (2002) \\
+    }
+  \end{flushright}
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Ethics: MSR}
+
+  \includegraphics[height=4.8cm]{figs/paper-gold-krinke-conclusions}
+  
+  \begin{flushright}
+    {\footnotesize
+      ``Ethical Mining: A Case Study on MSR Mining Challenges'', \\
+      Gold \& Krinke, MSR (2020) \\
+    }
+  \end{flushright}
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+
+\begin{columns}[T]
+\begin{column}{.78\textwidth}
+  {\huge Reminder: \\
+    This presentation \\ will focus on \\
+    privacy  \& \\ data protection \\}
+\end{column}%
+\hfill%
+\begin{column}{.20\textwidth}
+    \includegraphics[height=\textwidth]{figs/signal-caution}
+\end{column}%
+\end{columns}
+
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Applicable law}
+
+  In the European Union (and elsewhere):
+  
+  \begin{itemize}
+  \item \href{https://gdpr.eu/}{General Data Protection Regulation} (GDPR) \\
+    Affects all of EU, and rights of EU citizens
+  \item Specific law in member states
+  \item Recommendations by national data protection agencies
+  \end{itemize}
+
+  Becoming influential in other countries
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Applicable law}
+
+  Similar law in other jurisdictions:
+
+  {\small
+  \begin{itemize}
+  \item \href{https://www.oag.ca.gov/privacy/ccpa}{California Consumer Privacy Act}
+  \item Lei Geral de Proteçao de Dados (LGPD) (Brazil)
+  \item Act on Protection of Personal Information (Japan)
+  \item Personal Information Protection Act (South Korea)
+  \end{itemize}
+  }
+  (Plus international agreements, eg EU-Japan)
+\end{frame}
+
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Analysis: EU-funded research}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+
+  {\large What should we have into account, \\
+    if we get funded \\
+    by the European Commission? \\
+  }
+  
+  \begin{flushright}
+    In the process, we'll review one \\
+    of the more complete set of requirements \\
+    on data privacy \\
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+
   \begin{center}
     \includegraphics[width=12.5cm]{figs/legal-ethical}
   \end{center}
@@ -142,27 +284,7 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Applicable law}
-
-  In the European Union (and elsewhere):
-  
-  \begin{itemize}
-  \item \href{https://gdpr.eu/}{General Data Protection Regulation} (GDPR) \\
-    Affects all of EU, and rights of EU citizens
-  \item Specific law in member states
-  \item Recommendations by national data protection agencies \\
-  \end{itemize}
-
-  Similar law in other jurisdictions:
-
-  \begin{itemize}
-  \item \href{https://www.oag.ca.gov/privacy/ccpa}{California Consumer Privacy Act}
-  \end{itemize}
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Is research exempt?}
+  \frametitle{Research aspects}
 
   {\Large
 
@@ -297,6 +419,14 @@ does not permit [...] the identification of data subjects, those purposes shall 
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \vspace{-1.6cm}
+  \begin{center}
+    \includegraphics[width=13cm]{figs/gdpr-higher-risks-annotated-subjects}
+  \end{center}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
   \frametitle{Children \& vulnerable people}
 
   Maybe we don't know...\\
@@ -313,10 +443,57 @@ does not permit [...] the identification of data subjects, those purposes shall 
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{No explicit consent}
+
+  \begin{itemize}
+  \item We collect data from services...
+  \item ...which didn't get explicit consent for our cases
+  \item Even if they got, they don't guarantee that for us
+  \item In summary: usually, no explicit consent
+  \end{itemize}
+
+  \begin{flushright}
+    Can we avoid this case?
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \vspace{-1.6cm}
+  \begin{center}
+    \includegraphics[width=13cm]{figs/gdpr-higher-risks-annotated-scale}
+  \end{center}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Large-scale}
+
+  \begin{itemize}
+  \item Usually, several data sources
+  \item The more data, the better
+  \item If we can combine datasets, we do
+  \end{itemize}
+
+  \begin{flushright}
+    The better the research, the riskier
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \vspace{-1.6cm}
+  \begin{center}
+    \includegraphics[width=13cm]{figs/gdpr-higher-risks-annotated-techniques}
+  \end{center}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
   \frametitle{Privacy invasive methods}
 
   \begin{itemize}
-  \item Example: who is working off-hours
+  \item Example study: who is working off-hours
 
   \item Methodology: tracking individual activity in all available data sources
 
@@ -325,6 +502,20 @@ does not permit [...] the identification of data subjects, those purposes shall 
   
   \begin{flushright}
     You can learn working hours, days off, vacation...
+  \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data mining from social media}
+
+  \begin{itemize}
+  \item Our data source are social media
+  \item Of course we mine data from them
+  \end{itemize}
+
+  \begin{flushright}
+    Data mining is the core of our business
   \end{flushright}
 \end{frame}
 
@@ -361,47 +552,10 @@ does not permit [...] the identification of data subjects, those purposes shall 
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Large-scale}
-
-  \begin{itemize}
-  \item Usually, several data sources
-  \item The more data, the better
-  \item If we can combine datasets, we do
-  \end{itemize}
-
-  \begin{flushright}
-    The better the research, the riskier
-  \end{flushright}
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Data mining from social media}
-
-  \begin{itemize}
-  \item Our data source are social media
-  \item Of course we mine data from them
-  \end{itemize}
-
-  \begin{flushright}
-    Data mining is the core of our business
-  \end{flushright}
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{No explicit consent}
-
-  \begin{itemize}
-  \item We collect data from services...
-  \item ...which didn't get explicit consent for our cases
-  \item Even if they got, they don't guarantee that for us
-  \item In summary: usually, no explicit consent
-  \end{itemize}
-
-  \begin{flushright}
-    Can we avoid this case?
-  \end{flushright}
+  \vspace{-1.6cm}
+  \begin{center}
+    \includegraphics[width=13cm]{figs/gdpr-higher-risks-annotated-intl}
+  \end{center}
 \end{frame}
 
 %%-----------------------------------------
@@ -420,7 +574,95 @@ does not permit [...] the identification of data subjects, those purposes shall 
 
 %%-----------------------------------------
 %%-----------------------------------------
-\section{What should we do?}
+\section{Definitions (GDPR)}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data processing}
+
+  {\small
+    {\em
+    (2) Data processing [includes] any operation or set of operations which is performed  on  personal  data  or  on  sets  of  personal  data,  whether  or  not  by  automated  means,  such  as collection,  recording,  organisation,  structuring,  storage,  adaptation  or  alteration,  retrieval,  consultation, use,  disclosure  by  transmission,  dissemination  or  otherwise  making  available,  alignment  or  combination, restriction, erasure or destruction.
+    }
+  \begin{flushright}
+    GDPR, Article 4.
+  \end{flushright}
+  }
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Actors subject to GDPR}
+
+  \begin{itemize}
+  \item Data controller: determines the purposes and means of the processing of personal data
+  \item Data processor: processes personal data on behalf of the controller
+  \end{itemize}
+    
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Data protection office (DPO)}
+
+  \begin{itemize}
+  \item Appointed by controllers and processors \\
+    (eg: usually one in each University)
+  \item Involved in all issues related to protection of personal data
+  \item Data subjects may contact DPO directly
+  \item Good, local point to seek advice for a researcher
+  \end{itemize}
+  
+  \begin{flushright}
+    GDPR, Articles 37,38,39.
+  \end{flushright}
+  }
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{DPIA}
+
+  Data Protection Impact Assessment:
+  \vspace{.3cm}
+  
+  {\em
+    Process designed to   assess   the   data-protection   impacts [...]  and,   [...]  to ensure  that remedial actions are taken as necessary to correct, avoid or minimise the potential negative impacts on the data subjects.
+  }
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{DPIA likely required}
+
+\begin{center}
+  \includegraphics[height=3.9cm]{figs/gdpr-dpia-examples}
+  \end{center}  
+  
+  {\footnotesize
+    \begin{flushright}
+    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by European Commission
+  \end{flushright}
+  }
+\end{frame}
+
+
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Some guidelines}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+
+  {\Large Guidelines based on the \\
+    European Commission case, \\
+    but useful even when they \\
+    are not mandatory \\
+  }
+\end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -526,89 +768,11 @@ does not permit [...] the identification of data subjects, those purposes shall 
   \end{itemize}
 \end{frame}
 
-%%-----------------------------------------
-%%-----------------------------------------
-\section{Some definitions}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Data processing}
-
-  {\small
-    {\em
-    (2) Data processing [includes] any operation or set of operations which is performed  on  personal  data  or  on  sets  of  personal  data,  whether  or  not  by  automated  means,  such  as collection,  recording,  organisation,  structuring,  storage,  adaptation  or  alteration,  retrieval,  consultation, use,  disclosure  by  transmission,  dissemination  or  otherwise  making  available,  alignment  or  combination, restriction, erasure or destruction.
-    }
-  \begin{flushright}
-    GDPR, Article 4.
-  \end{flushright}
-  }
-  
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Actors subject to GDPR}
-
-  \begin{itemize}
-  \item Data controller: determines the purposes and means of the processing of personal data
-  \item Data processor: processes personal data on behalf of the controller
-  \end{itemize}
-    
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Data protection office (DPO)}
-
-  \begin{itemize}
-  \item Appointed by controllers and processors \\
-    (eg: usually one in each University)
-  \item Involved in all issues related to protection of personal data
-  \item Data subjects may contact DPO directly
-  \item Good, local point to seek advice for a researcher
-  \end{itemize}
-  
-  \begin{flushright}
-    GDPR, Articles 37,38,39.
-  \end{flushright}
-  }
-  
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{DPIA}
-
-  Data Protection Impact Assessment:
-  \vspace{.3cm}
-  
-  {\em
-    Process designed to   assess   the   data-protection   impacts [...]  and,   [...]  to ensure  that remedial actions are taken as necessary to correct, avoid or minimise the potential negative impacts on the data subjects.
-  }
-\end{frame}
-
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{DPIA likely required}
-
-\begin{center}
-  \includegraphics[height=3.9cm]{figs/gdpr-dpia-examples}
-  \end{center}  
-  
-  {\footnotesize
-    \begin{flushright}
-    \href{https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/ethics/h2020_hi_ethics-data-protection_en.pdf}{H2020 document on Ethics and Data Protection}, \\ by European Commission
-  \end{flushright}
-  }
-\end{frame}
-
-
 
 
 %%-----------------------------------------
 %%-----------------------------------------
-\section{A case study}
+\section{Case: git data}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -1035,6 +1199,174 @@ Comment: 4343434334
   
 \end{frame}
 
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Case: Anonymizing public datasets}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Sharing a dataset}
+
+  \begin{itemize}
+  \item Use Perceval to collect whatever the data source offers
+  \item Analyze fields in each JSON document with strings that can be used to identify persons
+  \item Extra step in the pipeline: anonymize those strings
+  \item Store the resulting JSON documents
+  \end{itemize}
+
+  \begin{center}
+    Is this good enough?
+  \end{center}
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{How to anonymize}
+
+  \begin{itemize}
+  \item Hashing is not good enough (easy to break if you have collections of identities)
+  \item Alternatives: coding, hashing with salt, HMAC
+  \end{itemize}
+
+  \begin{center}
+    Each option has its own characteristics
+  \end{center}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Attack models}
+
+  \begin{itemize}
+  \item \textbf{Single target:} \\
+    Given an identity, find all items linked to it
+  \item \textbf{Trawl fishing:} \\
+    Given a large set of identities, find items linked to any of them in the dataset
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Attack models}
+
+  \begin{itemize}
+  \item \textbf{Public exploitation:} \\
+    Find a public, un-anonimized item, compare with same item in dataset, de-anonymize all anonymous identities linked to it
+  \end{itemize}
+
+  \begin{center}
+  \end{center}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Public exploitation}
+  
+  \begin{itemize}
+  \item If you can find an item in the original data source, you can deanonymize identities in it
+  \item Avoidance: different anonymizations for each item.
+  \item For example: $HMAC(id, item\_id)$
+  \end{itemize}
+
+  \begin{center}
+    Problem: now you cannot group items per person
+  \end{center}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties}
+
+  Something to allow:
+  
+  \begin{itemize}
+  \item A FOSS Foundation may have consent from its developers
+  \item A company may have consent from its employees (eg, incentives program)
+  \item An organization may get consent on a one-by-one basis
+  \end{itemize}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties}
+
+  Can we use the ananymized data \\ re-identifying it? \\
+
+  \begin{center}
+    Yes, we can (but there are issues)
+  \end{center}
+
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties (A)}
+
+  \begin{itemize}
+  \item Anonymize by hashing, never published
+  \item Making dataset public: $HMAC(hash)$
+  \item Deliver the HMAC key to trusted parties
+  \item Trusted parties hash identities, \\
+    $HMAC(hash)$, re-assign identities
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties (A)}
+
+  \begin{itemize}
+  \item If you don't have the key, you cannot HMAC
+  \item If you don't have the identity, you cannot hash
+  \end{itemize}
+
+  Problems:
+  
+  \begin{itemize}
+  \item $Store$ stores hashes (far from ideal)
+  \item If you're not that trusted, \\
+    you can try deanonymizing all identities
+  \end{itemize}
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties (B)}
+
+  \begin{itemize}
+  \item Anonymize with HMAC, $Key_{Store}$, make dataset public
+  \item Get identities from trusted parties, HMAC with $Key_{Store}$, deanonymize in dataset and send securely to authorized party
+  \end{itemize}
+
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties (B)}
+
+  Problems:
+
+  \begin{itemize}
+    \item You need to trust $Store$
+    \item Deanonimized dataset could be compromised (HMAC it with $Key_{Party}$)
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Re-identification by authorized parties (C)}
+
+
+  \begin{center}
+    Could we have the best if (A) and (B)?
+  \end{center}
+\end{frame}
+
 
 %%-----------------------------------------
 %%-----------------------------------------
@@ -1391,7 +1723,10 @@ The  GDPR establishes special safeguards for children in relation to ``informati
 
   \includegraphics[width=1.5cm]{figs/bookpages}
   {\small \href{https://pixabay.com/en/book-reading-library-literature-1261800/}{Image from Pixbay}, by NikolayFrolochkin. License: CC0 Creative Commons}
-  
+
+  \includegraphics[width=1.5cm]{figs/signal-caution}
+  {\small \href{https://openclipart.org/detail/118033/caution-warning-precaucion-alerta}{Caution, Warning. Precaucion, Alerta}, by Ehecatl1138, OpenclipArt. License: CC0 Creative Commons}
+
 \end{frame}
 
 
@@ -1406,7 +1741,7 @@ The  GDPR establishes special safeguards for children in relation to ``informati
  \\
 
 \begin{footnotesize}
-\copyright 2019 Jesus M. Gonzalez-Barahona. \\
+\copyright 2019-2020 Jesus M. Gonzalez-Barahona. \\
 
 \vspace{.4cm}
 
