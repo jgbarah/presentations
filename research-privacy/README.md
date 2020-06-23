@@ -1,14 +1,8 @@
-## Talk at SECO-ASSIST 2019 Research Seminar
-
-"Data mining in the times of the GDPR".
-Seminar held on September 4th 2019 in University of Mons (Belgium).
-
-* [Slides](slides-sec-2019.pdf)
-* [Video](https://www.youtube.com/watch?v=IbP6-A76s6A)
-
 ## Talk at MSR 2020 Educational Track
 
 "Mining Software Repositories While Respecting Privacy"
+
+* [Slides](slides.pdf)
 
 * Abstract:
 
@@ -16,6 +10,13 @@ At first glance, research based on mining software repositories (MSR) does not s
 
 This talk will explain which research activities related to MSR are potentially of concern with respect to privacy issues, to which extent researchers should be concerned, and how we should deal with those concerns to ensure we minimize the potential legal and ethical effects.
 
+## Talk at SECO-ASSIST 2019 Research Seminar
+
+"Data mining in the times of the GDPR".
+Seminar held on September 4th 2019 in University of Mons (Belgium).
+
+* [Slides](slides-sec-2019.pdf)
+* [Video](https://www.youtube.com/watch?v=IbP6-A76s6A)
 
 
 ## Related documents
