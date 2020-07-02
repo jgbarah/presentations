@@ -33,7 +33,7 @@ Free / open source software and open access and all that:
 
 Academic and research:
 
-* [Characterizing outdateness with technical lag](tech-lag-outdateness/slides.pdf) (English)
+* [Characterizing outdateness with technical lag](tech-lag-outdateness/) (English)
 * [Data mining in the times of GDPR](research-privacy/): includes slides, videos.. (English)
 * Can software be healthy?: [slides](healthy-sw/slides.pdf) (English)
 * Technical lag: [slides](tech-lag/slides.pdf) (English)
