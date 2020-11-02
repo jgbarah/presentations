@@ -9,12 +9,12 @@ Social aspects of technology:
 * Internet: pasado y futuro: [transpas](internet-pasado-futuro/transpas.pdf) (Spanish)
 * Lección magistral: [transpas](leccion-magistral/transpas.pdf) (Spanish)
 * La tecnología no es neutra:
-  [transpas última versión](tecnologia-no-neutra/tecnologia-no-neutra.pdf),
-  [transpas curso Pensamiento Computacional UIMP 2019](tecnologia-no-neutra/tecnologia-no-neutra-uimp-2019.pdf),
-[transpas T3chfest 2018](tecnologia-no-neutra/tecnologia-no-neutra-t3chfest-2018.pdf),
-  [transpas curso UNED 2018](tecnologia-no-neutra/tecnologia-no-neutra-uned-2018.pdf) 
+  [transpas (última versión)](tecnologia-no-neutra/tecnologia-no-neutra.pdf),
+  [transpas (curso Pensamiento Computacional UIMP 2019)](tecnologia-no-neutra/tecnologia-no-neutra-uimp-2019.pdf),
+[transpas (T3chfest 2018)](tecnologia-no-neutra/tecnologia-no-neutra-t3chfest-2018.pdf),
+  [transpas (curso UNED 2018)](tecnologia-no-neutra/tecnologia-no-neutra-uned-2018.pdf) 
   (Spanish)
-* La tecnología te controla: [transpas](tecnologia-te-controla/transpas-2018-05.pdf) (Spanish)
+* La tecnología te controla: [transpas (últina versión)](tecnologia-te-controla/transpas-2020-11.pdf), [transpas (Pint of Science 2018)](tecnologia-te-controla/transpas-2018-05.pdf) (Spanish)
 * Software libre en educacion: [transpas](soft-libre-educacion/soft-libre-educacion.pdf) (Spanish)
 
 Technology:
