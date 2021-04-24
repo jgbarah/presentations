@@ -2,7 +2,7 @@
 
 "Mining Software Repositories While Respecting Privacy"
 
-* [Slides](slides.pdf)
+* [Slides](slides-msr.pdf)
 * [Video](https://www.youtube.com/watch?v=O6er2YpE8XQ)
 * Abstract:
 

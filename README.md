@@ -26,6 +26,7 @@ Technology:
 
 Free / open source software and open access and all that:
 
+* [¿Qué es el software libre?](software-libre/transpas.pdf) (Spanish). Incluye una pildorita sobre ciencia abierta.
 * [Hace más de 10 años que hacía 10 años](es-libre-10-10/transpas.pdf) (Spanish)
 * [Licencias de software libre](licencias-sobre/transpas.pdf) (Spanish)
 * [Publicación abierta](publicacion-abierta/transpas.pdf) (Spanish)
