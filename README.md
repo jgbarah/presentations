@@ -15,7 +15,7 @@ Social aspects of technology:
   [transpas (curso UNED 2018)](tecnologia-no-neutra/tecnologia-no-neutra-uned-2018.pdf) 
   (Spanish)
 * La tecnología te controla: [transpas (últina versión)](tecnologia-te-controla/transpas-2020-11.pdf), [transpas (Pint of Science 2018)](tecnologia-te-controla/transpas-2018-05.pdf) (Spanish)
-* Software libre en educacion: [transpas](soft-libre-educacion/soft-libre-educacion.pdf) (Spanish)
+* Software libre en educacion: [transpas](soft-libre-educacion/soft-libre-educacion-2019.pdf) (Spanish)
 
 Technology:
 
