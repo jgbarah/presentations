@@ -1,0 +1,159 @@
+% main.tex
+% Fichero principal de transparencias (incluye a todos los demás).
+
+% Compilar a .pdf con LaTeX (pdflatex)
+% Es necesario instalar Beamer (paquete latex-beamer en Debian)
+%
+
+% Gráficos:
+% Los gráficos pueden suministrarse en PNG, JPG, TIF, PDF, MPS
+% Los EPS deben convertirse a PDF (usar epstopdf)
+%
+%\documentclass[17pt,aspectratio=169,hyperref={pdfusetitle,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}]{beamer}
+\documentclass[17pt,aspectratio=169,hyperref={pdfusetitle,colorlinks,allcolors=olive}]{beamer}
+\usetheme[orchid]{Hannover}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{headline}{}
+\useoutertheme{infolines}
+
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage{multicol}
+%\usepackage{amssymb} % Simbolos matematicos
+%\usepackage[pdfusetitle]{hyperref}
+
+%\usepackage{chronosys}
+
+%% two slides per page
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+%\usepackage{tikz}
+
+\newcommand\YUGE{\fontsize{48}{60}\selectfont}
+
+\newcommand{\secimage}{figs/bookpages}
+\AtBeginSection[]
+{
+  {
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{\secimage}}
+    \begin{frame}<beamer>
+
+      \begin{center}
+        {\YUGE\bf\insertsection}
+      \end{center}
+    \end{frame}
+  }
+  \renewcommand{\secimage}{figs/bookpages}
+}
+
+
+\title[softDev]{softDev: Research group on software development}
+%\subtitle{}
+\author[Jesus M. Gonzalez-Barahona]{Jesus M. Gonzalez-Barahona}
+\institute[URJC]{Universidad Rey Juan Carlos \\
+  \url{https://floss.social/@jgbarah} ~~~~~ \url{https://jgbarah.github.io/presentations}}
+
+\date[Open Science Workshop, 2022]{\small  I Jornada Divulgación Investigación ETSIT \\
+  ETSIT-URJC, Fuenlabrada, Spain, November 22nd 2022}
+\begin{document}
+
+%\begin{frame}[label=firstframe]
+\begin{frame}
+  \maketitle
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Topics}
+
+  {\Large \center
+  ``Understanding software development (empirical approach)''
+}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Topics}
+
+  \begin{itemize}
+  \item Mining software repositories
+  \item Robotics software
+  \item Real-time multimedia web-based applications
+  \item Testing in the large
+  \item Computational thinking
+  \item Evaluation of software comprehension
+  \item Data visualization in extended reality
+  \end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{People: research members}
+
+  {\footnotesize
+  \begin{columns}[T]
+    \begin{column}{.48\textwidth}
+
+      \begin{itemize}
+      \item González Gómez, Juan
+      \item Cañas Plaza, Jose María
+      \item González Barahona, Jesús
+      \item Leal Algara, Elena Katia
+      \item Robles Martínez, Gregorio
+      \item Martín Rico, Francisco
+      \end{itemize}
+    \end{column}%
+    \hfill%
+    \begin{column}{.48\textwidth}
+      \begin{itemize}
+      \item Montalvo Herranz, María del Soto
+      \item Gallego Carrillo, Micael
+      \item Gortázar Bellas, Francisco
+      \end{itemize}
+    \end{column}%
+  \end{columns}
+}
+\end{frame}
+
+
+\frame{
+~
+\vspace{1cm}
+
+\begin{flushright}
+
+\includegraphics[width=2.2cm]{figs/by-sa}
+ \\
+
+\begin{footnotesize}
+\copyright 2022 Jesus M. Gonzalez-Barahona. \\
+
+\vspace{.4cm}
+
+Some rights reserved. This document is distributed under the terms of the Creative Commons License ``Attribution-ShareAlike 4.0'',
+available in \\
+{\scriptsize \url{http://creativecommons.org/licenses/by-sa/4.0/}} \\
+
+\vspace{.4cm}
+
+This document (including source) is available from
+\url{https://jgbarah.github.io/presentations}
+
+\end{footnotesize}
+\end{flushright}
+
+}
+%%
+
+%\againframe{firstframe}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
