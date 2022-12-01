@@ -74,22 +74,24 @@
 %\end{multicols}
 \end{frame}
 
-%%-----------------------------------------
-%%-----------------------------------------
-\section{Diffussion models}
 
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Stable Diffussion}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{What is FOSS(*)?}
+  \frametitle{Stable Diffusion process}
 
+      \includegraphics[width=10cm]{figs/sd-process}
+
+  \begin{flushright}
+    {\scriptsize
+    \url{https://jalammar.github.io/illustrated-stable-diffusion/}
+    }
+  \end{flushright}
 
 \end{frame}
-
-%%-----------------------------------------
-%%-----------------------------------------
-\section{Stable Diffussion release}
-
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -216,8 +218,33 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Integration in toolchains}
+  \frametitle{Integration: GIMP}
 
+    \begin{center}
+    \includegraphics[width=7cm]{figs/sd-gimp}
+  \end{center}
+
+  \begin{flushright}
+    {\scriptsize
+    \url{https://github.com/blueturtleai/gimp-stable-diffusion} \\
+    }
+  \end{flushright}
+  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Integration: Blender}
+
+    \begin{center}
+    \includegraphics[width=7cm]{figs/sd-blender}
+  \end{center}
+
+  \begin{flushright}
+    {\scriptsize
+    \url{https://blendermarket.com/products/ai-render} \\
+    }
+  \end{flushright}
   
 \end{frame}
 
@@ -225,6 +252,15 @@
 \begin{frame}[fragile]
   \frametitle{In-painting}
 
+    \begin{center}
+    \includegraphics[width=9.5cm]{figs/sd-inpainting}
+  \end{center}
+
+  \begin{flushright}
+    {\scriptsize
+    \url{https://huggingface.co/spaces/multimodalart/stable-diffusion-inpainting} \\
+    }
+  \end{flushright}
   
 \end{frame}
 
@@ -280,6 +316,26 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{Fine-tuned images}
+
+  \begin{columns}[T]
+    \begin{column}{.48\textwidth}
+        \includegraphics[width=6cm]{figs/sd-dreambooth}
+    \end{column}%
+    \hfill%
+    \begin{column}{.48\textwidth}
+      \vspace{1.5cm}
+      {\scriptsize
+        \url{https://github.com/XavierXiao/Dreambooth-Stable-Diffusion} \\
+      }
+    \end{column}%
+  \end{columns}
+
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
   \frametitle{3D assets}
 
   \begin{center}
@@ -314,6 +370,12 @@
 \begin{frame}[fragile]
   \frametitle{Videos}
 
+  \begin{center}
+    \includegraphics[width=2.5cm]{figs/sd-video-1}
+    \includegraphics[width=2.5cm]{figs/sd-video-2}
+    \includegraphics[width=2.5cm]{figs/sd-video-3}
+    \includegraphics[width=2.5cm]{figs/sd-video-4}
+  \end{center}
   
   \begin{flushright}
     {\scriptsize
@@ -395,7 +457,7 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Whisper fro Toutube captions}
+  \frametitle{Whisper for Toutube captions}
 
   \includegraphics[width=8.5cm]{figs/whisper-youtube}
 
@@ -518,6 +580,52 @@
       License: Apache 2.0 \\
     }
   \end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Model frameworks, etc}
+
+    \begin{columns}[T]
+    \begin{column}{.28\textwidth}
+
+  \begin{flushright}
+        PyTorch
+  \end{flushright}
+
+  \begin{flushright}
+        TensorFlow
+  \end{flushright}
+
+  \begin{flushright}
+        Keras
+  \end{flushright}
+
+  \begin{flushright}
+        Cuda
+  \end{flushright}
+    \end{column}%
+    \hfill%
+    \begin{column}{.68\textwidth}
+  \begin{flushright}
+    {\small \url{https://pytorch.org/}}
+  \end{flushright}
+
+   \begin{flushright}
+    {\small  \url{https://tensorflow.org/}}
+  \end{flushright}
+
+  \begin{flushright}
+    {\small  \url{https://keras.io/}}
+  \end{flushright}
+
+    \begin{flushright}
+    {\small  \url{https://developer.nvidia.com/cuda-toolkit}}
+  \end{flushright}
+   \end{column}%
+  \end{columns}
+
+  
 \end{frame}
 
 %%-----------------------------------------
