@@ -23,6 +23,7 @@ Technology:
 * [Open web](open-web) (English)
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
+* [Stable Diffusion](stable-diffusion/slides.pdf) (English)
 
 Free / open source software and open access and all that:
 
