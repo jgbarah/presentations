@@ -23,7 +23,7 @@ Technology:
 * [Open web](open-web) (English)
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
-* [Stable Diffusion](stable-diffusion/slides.pdf) (English)
+* Stable Diffusion (English): [presented in Machine Learning Spain Meetup, Dec. 1st 2022](stable-diffusion/slides-2022-12-01.pdf), [presented in URJC, Feb. 16th 2023](stable-diffusion/slides-2023-02-16.pdf).
 
 Free / open source software and open access and all that:
 
