@@ -454,6 +454,24 @@
 
 \end{frame}
 
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Whisper (ejemplo)}
+
+{\small
+\begin{verbatim}
+import whisper
+
+model = whisper.load_model('tiny')
+transcription = model.transcribe('recording.wav')
+print(transcription['text'])
+\end{verbatim}
+}
+
+\end{frame}
+
+
 %% -----------------------------------------
 \begin{frame}[fragile]
   \frametitle{BLOOM}
@@ -465,9 +483,32 @@
   46 natural languages and 13 programming languages
 
   \begin{flushright}
+    {\small
     \url{https://bigscience.huggingface.co/blog/bloom} \\
-    \url{https://huggingface.co/bigscience/bloom}
+    \url{https://huggingface.co/bigscience/bloom} \\ }
     License: BigScience RAIL License v1.0 (restricted use cases) \\
+  \end{flushright}
+
+\end{frame}
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{GPT-Neo, GPT-J}
+
+  GPT-J-6B:
+  \begin{flushright}
+    {\small
+    \url{https://huggingface.co/EleutherAI/gpt-j-6B}} \\
+    License: Apache 2.0 /
+    Date: December 2022 \\
+  \end{flushright}
+
+  GPT-NeoX-20B:
+  \begin{flushright}
+    {\small
+    \url{https://blog.eleuther.ai/announcing-20b/}} \\
+    License: Apache 2.0 /
+    Date: February 2022 \\
   \end{flushright}
 
 \end{frame}
