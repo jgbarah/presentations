@@ -10,7 +10,7 @@ Social aspects of technology:
 * Lección magistral: [transpas](leccion-magistral/transpas.pdf) (Spanish)
 * La tecnología no es neutra:
   [transpas (última versión)](tecnologia-no-neutra/tecnologia-no-neutra.pdf),
-  [transpas (curso Pensamiento Computacional UIMP 2019)](tecnologia-no-neutra/tecnologia-no-neutra-uimp-2019.pdf),
+  [transpas (presentación ETSIT-URJC](tecnologia-no-neutra/tecnologia-no-neutra-urjc-2019.pdf), [transpas (curso Pensamiento Computacional UIMP 2019)](tecnologia-no-neutra/tecnologia-no-neutra-uimp-2019.pdf),
 [transpas (T3chfest 2018)](tecnologia-no-neutra/tecnologia-no-neutra-t3chfest-2018.pdf),
   [transpas (curso UNED 2018)](tecnologia-no-neutra/tecnologia-no-neutra-uned-2018.pdf) 
   (Spanish)
