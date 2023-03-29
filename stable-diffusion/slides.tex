@@ -55,8 +55,9 @@
 \institute[URJC]{Universidad Rey Juan Carlos \\
   \url{https://floss.social/@jgbarah} ~~~~~ \url{https://jgbarah.github.io/presentations}}
 
-\date[URJC, 2023]{\small URJC \\
-  Madrid, Spain, February 16th 2023}
+\date[Jornadas Cultura Libre, 2023]{\small Jornadas de Cultura Libre, URJC \\
+  Fuenlabrada, Spain, March 30th 2023~~~~~~~~\includegraphics[width=1.2cm]{figs/by-sa}}
+
 \begin{document}
 
 %\begin{frame}[label=firstframe]
@@ -164,6 +165,26 @@
 }  
 \end{frame}
 
+%%-----------------------------------------
+\begin{frame}[fragile]
+
+  \includegraphics[width=6.5cm]{figs/sd-free-culture-enthusiast}
+
+  {\small
+  ``Free culture enthusiast portrait, photorealistic''
+}  
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+
+  \includegraphics[width=6.5cm]{figs/sd-free-culture-enthusiast-dino}
+
+  {\small
+  ``selfie of a free culture enthusiast with a dinosaur''
+}  
+\end{frame}
+
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -231,7 +252,7 @@
     }
   \end{flushright}
 
-  Más resolución,\\ más precisión en los estilos,\\ más control.\\
+  Better resolution, \\ more precision in styles, \\ more control.
 \end{frame}
 
 %% -----------------------------------------
@@ -457,7 +478,7 @@
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Whisper (ejemplo)}
+  \frametitle{Whisper (example)}
 
 {\small
 \begin{verbatim}
@@ -600,6 +621,116 @@ print(transcription['text'])
       \vspace{1.5cm}
     {\scriptsize
       \url{https://twitter.com/mervenoyann/status/1572168848622907393}
+    }
+    \end{column}%
+  \end{columns}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A tale (1): LLaMa}
+
+  February 25, 2023 / License: research use
+
+  \includegraphics[height=3.5cm]{figs/llama}
+  
+  \begin{flushright}
+    {\scriptsize
+      \url{https://ai.facebook.com/blog/large-language-model-llama-meta-ai/}
+    }
+  \end{flushright}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A tale (2): Dalai}
+
+  March 12, 2023
+  
+  \begin{columns}[T]
+    \begin{column}{.58\textwidth}
+      \includegraphics[width=7.5cm]{figs/dalai}
+    \end{column}%
+    \hfill%
+    \begin{column}{.38\textwidth}
+      \vspace{1.5cm}
+
+      
+      JavaScript module providing a web interface to LLaMA (and later Alpaca)
+
+      License: ??
+      
+      {\scriptsize
+        \url{https://github.com/antimatter15/alpaca.cpp}
+      }
+    \end{column}%
+  \end{columns}
+
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A tale (3): Alpaca}
+
+  March 13, 2023
+  
+  \begin{quote}
+    \footnotesize ``A group [...] at Stanford University fine-tuned LLaMA to develop Alpaca, an open-source seven-billion-parameter model that reportedly cost less than \$600 to build. [...] some [developers] reportedly managed to get it up and running on Raspberry Pi computers and even a Pixel 6 smartphone.''
+  \end{quote}
+
+  License: research use (dataset: CC-BY-NC)
+  
+  \begin{flushright}
+    {\scriptsize
+      \url{https://github.com/tatsu-lab/stanford_alpaca} \\
+      \url{https://crfm.stanford.edu/2023/03/13/alpaca.html} \\
+      \url{https://theregister.com/2023/03/21/stanford_ai_alpaca_taken_offline/} \\
+    }
+  \end{flushright}
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A tale (4): Serge}
+
+  \begin{columns}[T]
+    \begin{column}{.58\textwidth}
+      \includegraphics[width=7.5cm]{figs/serge}
+    \end{column}%
+    \hfill%
+    \begin{column}{.38\textwidth}
+      \vspace{1.5cm}
+
+      Docker containers for deploying a chat with LLaMa (Alpaca models)
+      
+    {\scriptsize
+      \url{https://github.com/nsarrazin/serge}
+    }
+    \end{column}%
+  \end{columns}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A tale (5): Alpaca Electron}
+
+  \begin{columns}[T]
+    \begin{column}{.58\textwidth}
+      \includegraphics[width=7.5cm]{figs/alpaca-electron}
+    \end{column}%
+    \hfill%
+    \begin{column}{.38\textwidth}
+      \vspace{1.5cm}
+
+      Electron app for deploying a chat with LLaMa (Alpaca models)
+      
+    {\scriptsize
+      \url{https://github.com/ItsPi3141/alpaca-electron}
     }
     \end{column}%
   \end{columns}
