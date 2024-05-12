@@ -49,14 +49,14 @@
 }
 
 
-\title[Generative AI]{Generative Artificial Intelligence with ``Open'' Models}
+\title[Generative AI]{Generative AI Models in your own computer}
 %\subtitle{}
 \author[Jesus M. Gonzalez-Barahona]{Jesus M. Gonzalez-Barahona}
 \institute[URJC]{Universidad Rey Juan Carlos \\
   \url{https://floss.social/@jgbarah} ~~~~~ \url{https://jgbarah.github.io/presentations}}
 
-\date[October 2023]{\small Jornadas Anuales Wikimedia España \\
-  Salamanca, Spain, Nov 11th 2023~~~~~~~~\includegraphics[width=1.2cm]{figs/by-sa}}
+\date[May 2024]{\small Jornada sobre IA en educación \\
+  Madrid, Spain, May 13th 2024~~~~~~~~\includegraphics[width=1.2cm]{figs/by-sa}}
 
 \begin{document}
 
@@ -78,130 +78,26 @@
 
 %%-----------------------------------------
 %%-----------------------------------------
-\section{Examples: images}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-    \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-        \includegraphics[width=7.5cm]{figs/sdxl-dinosaurio}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
-      Dinosaurio, vestido con un traje,  con sombrero flamenco, ofreciendo una margarita
-    \end{column}%
-  \end{columns}
-
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-    \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-        \includegraphics[width=7.5cm]{figs/sd-football-spain}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
-  Spain football team, winners of the World Cup in Qatar 2022, celebrating
-
-    \end{column}%
-  \end{columns}
-
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-    \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-        \includegraphics[width=7.5cm]{figs/sd-football-japan}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
-  Japan football team, winners of the World Cup in Qatar 2022, celebrating
-
-    \end{column}%
-  \end{columns}
-
-\end{frame}
+\section{What is an ``open'' model?}
 
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+  \frametitle{Models for text, images...}
 
     \begin{columns}[T]
     \begin{column}{.58\textwidth}
-        \includegraphics[width=7.5cm]{figs/sd-profe-secundaria}
+        \includegraphics[width=7cm]{figs/selfie}
     \end{column}%
     \hfill%
     \begin{column}{.38\textwidth}
-      Profesor de tecnología de educación secundaria
-    \end{column}%
-  \end{columns}
-
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-    \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-        \includegraphics[width=7.5cm]{figs/sd-teacher-tech}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
-      Technology teacher, secondary education, portrait
-    \end{column}%
-  \end{columns}
-
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-    \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-        \includegraphics[width=7.5cm]{figs/selfie}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
+      {\small Stable Diffusion XL:} \\
       selfie of a teacher with a dinousar, in Manhattan \\
       cinematic-default \\
     \end{column}%
   \end{columns}
 
 \end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-  \includegraphics[width=6.5cm]{figs/sd-free-culture-enthusiast-dino}
-
-  {\small
-  ``selfie of a free culture enthusiast with a dinosaur''
-}  
-\end{frame}
-
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Test it yourself}
-
-  \url{https://beta.dreamstudio.ai/}
-
-  \url{https://www.bing.com/images/create}
-
-  \url{https://app.prodia.com/}
-
-  \url{https://stablediffusion.fr/xl}
-
-  \url{https://stablediffusionweb.com}
-
-  Or install Stable Diffusion XL it in your own infrastructure
-\end{frame}
-
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -214,62 +110,41 @@
 }  
 \end{frame}
 
-
-
-%%-----------------------------------------
-%%-----------------------------------------
-\section{Examples: text, code...}
-
 %%-----------------------------------------
 \begin{frame}[fragile]
-\frametitle{Chats}
 
-  \url{https://chat.openai.com}
-
-\url{https://claude.ai}
-
-\url{https://www.jasper.ai/chat}
-
-\url{https://bard.google.com}
-
-\url{https://huggingface.co/chat/}
-
-\url{https://huggingface.co/chat/}
-
-\url{https://open-assistant.io/chat}
-
+  {\Large
+    Can we control \\
+    how we use \\
+    generative models? \\
+  }  
 \end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-\frametitle{Code}
+  \frametitle{What's a generative model}
 
-Usually as plugins for IDEs
+  \begin{itemize}
+  \item Architecture
+  \item Weights, just weitghts
+  \item Software to make inferences
+  \end{itemize}
 
-Exammple: Cody
+  But also:
 
-\url{https://about.sourcegraph.com/cody}
-
-\end{frame}
-
-
-%%-----------------------------------------
-%%-----------------------------------------
-\section{What's in a generative model}
-
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-Weights, just weitghts \\
-
-(and software to make them useful)
+  \begin{itemize}
+  \item Data to train, benchmark
+  \item Software to train, benchmark
+  \item Weights of intermediate models
+  \item Documentation, explaining everything
+  \end{itemize}
 \end{frame}
 
 
 
 %% -----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Stable Diffusion process}
+  \frametitle{Example: Stable Diffusion}
 
       \includegraphics[width=10cm]{figs/sd-process}
 
@@ -282,9 +157,331 @@ Weights, just weitghts \\
 \end{frame}
 
 
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{}
+
+  \includegraphics[height=6cm]{figs/paper-openess-framework}
+
+  \begin{flushright}
+    {\small
+      \url{https://arxiv.org/abs/2403.13784}
+    }
+  \end{flushright} 
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Classes of ``openess''}
+
+\begin{itemize}
+\item Open science: paper, datasets, log files, intermediate models parameters \& metadata
+\item Open tooling: training, inference, and evaluation code, libraries, evaluation data
+\item Open model: architecture, model parameters \& medatadata, tech report, model card, data card
+\end{itemize}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{For each of them...}
+
+\begin{itemize}
+\item Freedom of use
+\item Freedom of study
+\item Freedom of modification
+\item Freedom of sharing
+\end{itemize}
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Minimum for running in your computer}
+
+\begin{itemize}
+\item Inference code, with libraries
+\item Model architecture
+\item Model parameters \& metadata (weights)
+\item Technical report (prompts, etc.)
+\item Model card (convenient)
+\end{itemize}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Equipment requirements}
+
+\begin{itemize}
+\item Depends on architecture, and size of the model
+\item CPU can be enough, GPU can accelerate a lot
+\item RAM enough so that model fits
+\item Code is usually FOSS
+\end{itemize}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Example: HuggingChat}
+
+\begin{center}
+  \includegraphics[width=6cm]{figs/huggingchat}
+  \includegraphics[width=3cm]{figs/huggingchat-models}
+\end{center}
+
+\begin{flushright}
+  {\small
+    \url{https://huggingface.co/chat/}
+  }
+\end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Example: Stable Diffusion}
+
+\begin{center}
+  \includegraphics[width=5cm]{figs/protogen-webui}
+\end{center}
+
+\begin{flushright}
+  {\small
+    \url{https://huggingface.co/spaces/darkstorm2150/protogen-web-ui}
+  }
+\end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Example: TripoSR}
+
+\begin{center}
+  \includegraphics[width=5cm]{figs/triposr}
+\end{center}
+
+\begin{flushright}
+  {\small
+    \url{https://huggingface.co/spaces/stabilityai/TripoSR}
+  }
+\end{flushright}
+\end{frame}
+
 %%-----------------------------------------
 %%-----------------------------------------
-\section{Extensions, integrations}
+\section{Generative AI in your computer}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Speech to text: Whisper}
+
+%  \includegraphics[width=8.5cm]{figs/whisper}
+{\small
+\begin{verbatim}
+#!/usr/bin/python3
+import whisper
+
+model = whisper.load_model('tiny')
+transcription = model.transcribe('recording.wav')
+print(transcription['text'])
+\end{verbatim}
+}
+
+\begin{verbatim}
+$ whisper speech.wav --language Spanish
+\end{verbatim}
+
+\begin{flushright}
+  {\scriptsize
+    \url{https://openai.com/blog/whisper/} \\
+    \url{https://github.com/openai/whisper} \\
+    License: MIT (open source) \\
+  }
+\end{flushright}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Text to speech: Coqui TTS}
+
+{\small
+\begin{verbatim}
+$ tts --text "Texto" \
+  --model_name tts_models/es/mai/tacotron2-DDC \
+  --out_path speech.wav
+\end{verbatim}
+}
+
+  \begin{flushright}
+    {\small
+    \url{https://github.com/idiap/coqui-ai-TTS} \\
+    License: MPL-2.0 (open source) \\
+  }
+  \end{flushright}
+
+\end{frame}
+
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Stable Diffussion}
+
+EasyDiffusion:
+\begin{flushright}
+\url{https://easydiffusion.github.io}
+\end{flushright}
+
+Fooocus:
+\begin{flushright}
+\url{https://github.com/lllyasviel/Fooocus}
+\end{flushright}
+
+AUTOMATIC1111:
+\begin{flushright}
+\url{https://github.com/AUTOMATIC1111/stable-diffusion-webui}
+\end{flushright}
+
+\end{frame}
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Stable Diffussion (2)}
+
+SD.next:
+\begin{flushright}
+\url{https://github.com/vladmandic/automatic}
+\end{flushright}
+
+ComfyUI:
+\begin{flushright}
+\url{https://github.com/comfyanonymous/ComfyUI}
+\end{flushright}
+
+\end{frame}
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Text generation models}
+
+Llama3 (70b, 8b), Llama Community License
+\begin{flushright}
+  \url{https://llama.meta.com/llama3/} \\
+  \url{https://github.com/meta-llama/llama3} \\
+\end{flushright}
+
+Command R+,  CC by-nc 4.0
+
+\begin{flushright}
+  \url{https://cohere.com/command}
+  \url{https://huggingface.co/spaces/CohereForAI/c4ai-command-r-plus}
+\end{flushright}
+
+\end{frame}
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Text generation models (2)}
+
+Mixtral (8x22b, 8x7b), Apache 2.0
+
+\begin{flushright}
+  \url{https://mistral.ai/news/mixtral-8x22b/}
+  \url{https://huggingface.co/mistralai/Mixtral-8x7B-v0.1}
+\end{flushright}
+
+
+Zephyr ORPO 141B-A39B, Apache 2.0
+
+\begin{flushright}
+  \url{https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1}
+\end{flushright}
+
+\end{frame}
+
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Leaderboard}
+
+    \includegraphics[width=7cm]{figs/leaderboard}
+
+
+\url{https://chat.lmsys.org/?leaderboard}
+
+\end{frame}
+
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Inference engines}
+
+llama.cpp
+
+\begin{flushright}
+  \url{https://github.com/ggerganov/llama.cpp}
+\end{flushright}
+
+Ollama
+
+\begin{flushright}
+  \url{https://ollama.com/}
+\end{flushright}
+
+vLLM
+
+\begin{flushright}
+  \url{https://github.com/vllm-project/vllm}
+\end{flushright}
+
+
+\end{frame}
+
+
+%% -----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Chat frontends}
+
+Oobabooga:
+\begin{flushright}
+\url{https://github.com/oobabooga/text-generation-webui}
+\end{flushright}
+
+openplayground:
+\begin{flushright}
+\url{https://github.com/nat/openplayground}
+\end{flushright}
+
+catAI
+\begin{flushright}
+\url{https://github.com/withcatai/catai}
+\end{flushright}
+
+\end{frame}
+
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Collections of consented, open data}
+
+  Chatbot Arena Leaderboard \\
+  \url{https://chat.lmsys.org/}
+
+  LAION Open Empathic \\
+  \url{https://laion.ai/blog/open-empathic/}
+
+  LAION Datasets \\
+  \url{https://laion.ai/projects/}
+\end{frame}
+
+
+
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Extending, combining}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -385,116 +582,6 @@ Weights, just weitghts \\
 \end{frame}
 
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Videos}
-
-  \begin{center}
-    \includegraphics[width=2.5cm]{figs/sd-video-1}
-    \includegraphics[width=2.5cm]{figs/sd-video-2}
-    \includegraphics[width=2.5cm]{figs/sd-video-3}
-    \includegraphics[width=2.5cm]{figs/sd-video-4}
-  \end{center}
-  
-  \begin{flushright}
-    {\scriptsize
-      \url{https://github.com/nateraw/stable-diffusion-videos} \\
-      \url{https://phenaki.github.io/} \\
-      \url{https://aiart.dev/posts/sd-music-videos/sd_music_videos.html} \\
-    }
-  \end{flushright}
-  
-  
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-
-  \begin{center}
-    {\Large And much, much more}
-  \end{center}
-    
-\end{frame}
-
-%%-----------------------------------------
-%%-----------------------------------------
-\section{Stable Diffusion is not alone}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Whisper}
-
-  \includegraphics[width=8.5cm]{figs/whisper}
-
-  \begin{flushright}
-    {\scriptsize
-    \url{https://openai.com/blog/whisper/} \\
-    \url{https://github.com/openai/whisper} \\
-    License: MIT (open source) \\
-  }
-  \end{flushright}
-
-\end{frame}
-
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Whisper (example)}
-
-{\small
-\begin{verbatim}
-import whisper
-
-model = whisper.load_model('tiny')
-transcription = model.transcribe('recording.wav')
-print(transcription['text'])
-\end{verbatim}
-}
-
-\end{frame}
-
-
-%% -----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{BLOOM}
-
-  The World’s Largest Open Multilingual Language Model  
-
-  176 billion parameters
-
-  46 natural languages and 13 programming languages
-
-  \begin{flushright}
-    {\small
-    \url{https://bigscience.huggingface.co/blog/bloom} \\
-    \url{https://huggingface.co/bigscience/bloom} \\ }
-    License: BigScience RAIL License v1.0 (restricted use cases) \\
-  \end{flushright}
-
-\end{frame}
-
-%% -----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{GPT-Neo, GPT-J}
-
-  GPT-J-6B:
-  \begin{flushright}
-    {\small
-    \url{https://huggingface.co/EleutherAI/gpt-j-6B}} \\
-    License: Apache 2.0 /
-    Date: December 2022 \\
-  \end{flushright}
-
-  GPT-NeoX-20B:
-  \begin{flushright}
-    {\small
-    \url{https://blog.eleuther.ai/announcing-20b/}} \\
-    License: Apache 2.0 /
-    Date: February 2022 \\
-  \end{flushright}
-
-\end{frame}
-
 %% -----------------------------------------
 \begin{frame}[fragile]
   \frametitle{Multilingual AI Assistant}
@@ -541,36 +628,14 @@ print(transcription['text'])
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Musika}
 
-  Fast 44.1 kHz stereo waveform music generation of arbitrary length
-
-  \begin{flushright}
-    \url{https://arxiv.org/abs/2208.08706} \\
-    \url{https://huggingface.co/spaces/marcop/musika} \\
-    License: MIT (open source) \\
-  \end{flushright}
-
+  \begin{center}
+    {\Large And much, much more}
+  \end{center}
+    
 \end{frame}
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Queries to documents}
 
-  \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-      \includegraphics[width=7.5cm]{figs/pdf-extract}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
-      \vspace{1.5cm}
-    {\scriptsize
-      \url{https://twitter.com/mervenoyann/status/1572168848622907393}
-    }
-    \end{column}%
-  \end{columns}
-
-\end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -1026,124 +1091,50 @@ print(transcription['text'])
 
 %%-----------------------------------------
 %%-----------------------------------------
-\section{The future}
+% \section{The future}
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Assignments}
+% %%-----------------------------------------
+% \begin{frame}[fragile]
+%   \frametitle{Assignments}
 
-  \begin{center}
-    \includegraphics[width=7cm]{figs/kids-essays}
-  \end{center}
+%   \begin{center}
+%     \includegraphics[width=7cm]{figs/kids-essays}
+%   \end{center}
 
   
-\end{frame}
+% \end{frame}
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Programming}
+% %%-----------------------------------------
+% \begin{frame}[fragile]
+%   \frametitle{Programming}
 
-  \begin{center}
-    \includegraphics[width=10cm]{figs/llm-programming-better}
-  \end{center}
+%   \begin{center}
+%     \includegraphics[width=10cm]{figs/llm-programming-better}
+%   \end{center}
 
-  \begin{flushright}
-    {\small
-      \url{https://arxiv.org/abs/2207.14502}
-    }
-  \end{flushright}
+%   \begin{flushright}
+%     {\small
+%       \url{https://arxiv.org/abs/2207.14502}
+%     }
+%   \end{flushright}
   
-\end{frame}
+% \end{frame}
 
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{Programming}
+% %%-----------------------------------------
+% \begin{frame}[fragile]
+%   \frametitle{Programming}
 
-  \begin{center}
-    \includegraphics[width=10cm]{figs/self-programming}
-  \end{center}
+%   \begin{center}
+%     \includegraphics[width=10cm]{figs/self-programming}
+%   \end{center}
 
-  \begin{flushright}
-    {\scriptsize
-      \url{https://keras.io/examples/generative/random_walks_with_stable_diffusion/}
-    }
-  \end{flushright}
+%   \begin{flushright}
+%     {\scriptsize
+%       \url{https://keras.io/examples/generative/random_walks_with_stable_diffusion/}
+%     }
+%   \end{flushright}
   
-\end{frame}
-
-%%-----------------------------------------
-%%-----------------------------------------
-\section{Do it yourself}
-
-%% -----------------------------------------
-\begin{frame}[fragile]
-\frametitle{Stable Diffussion}
-
-EasyDiffusion:
-\begin{flushright}
-\url{https://easydiffusion.github.io}
-\end{flushright}
-
-Fooocus:
-\begin{flushright}
-\url{https://github.com/lllyasviel/Fooocus}
-\end{flushright}
-
-AUTOMATIC1111:
-\begin{flushright}
-\url{https://github.com/AUTOMATIC1111/stable-diffusion-webui}
-\end{flushright}
-
-\end{frame}
-
-%% -----------------------------------------
-\begin{frame}[fragile]
-\frametitle{Stable Diffussion (2)}
-
-SD.next:
-\begin{flushright}
-\url{https://github.com/vladmandic/automatic}
-\end{flushright}
-
-ComfyUI:
-\begin{flushright}
-\url{https://github.com/comfyanonymous/ComfyUI}
-\end{flushright}
-
-\end{frame}
-
-
-%% -----------------------------------------
-\begin{frame}[fragile]
-\frametitle{Llama \& Co.}
-
-Oobabooga:
-\begin{flushright}
-\url{https://github.com/oobabooga/text-generation-webui}
-\end{flushright}
-
-openplayground:
-\begin{flushright}
-\url{https://github.com/nat/openplayground}
-\end{flushright}
-
-catAI
-\begin{flushright}
-\url{https://github.com/withcatai/catai}
-\end{flushright}
-
-\end{frame}
-
-%% -----------------------------------------
-\begin{frame}[fragile]
-\frametitle{Help training a model}
-
-Open Assistant:
-\begin{flushright}
-\url{https://open-assistant.io/dashboard}
-\end{flushright}
-
-\end{frame}
+% \end{frame}
 
 
 %%-----------------------------------------
@@ -1204,21 +1195,6 @@ Open Assistant:
   }  
 \end{frame}
 
-%% -----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{To try it yourself}
-
-
-  {\small
-    \begin{itemize}
-    \item Generative models for images (Stable Diffussion): \\
-      {\scriptsize \url{https://github.com/AUTOMATIC1111/stable-diffusion-webui}}
-    \item Generative models for text (LLaMA, GPT-J, Pythia, OPT, GALACTICA...) \\
-      {\scriptsize \url{https://github.com/oobabooga/text-generation-webui}}
-    \end{itemize}
-  }  
-\end{frame}
-
 % -----------------------------------------
 \begin{frame}[fragile]
   \frametitle{Credits}
@@ -1240,7 +1216,7 @@ Open Assistant:
  \\
 
 \begin{footnotesize}
-\copyright 2022-2023 Jesus M. Gonzalez-Barahona. \\
+\copyright 2022-2024 Jesus M. Gonzalez-Barahona. \\
 
 \vspace{.4cm}
 
