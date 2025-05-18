@@ -23,6 +23,7 @@ Technology:
 * [Open web](open-web) (English)
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
+* Open Models for Generativa Artificial Intelligence: [presented in URJC, May 19 2025](open-generative-ai/slides.pdf) [translated into Spanish by Qwen/Qwen3-235B-A22B](open-generative-ai/slides-es.pdf).
 * Stable Diffusion (English): [presented in IES Villaverde, June 9th 2023](stable-diffusion/slides-2023-06-09.pdf) [presented in URJC, Mar. 30th 2023](stable-diffusion/slides-2023-03-30.pdf), [presented in URJC, Feb. 16th 2023](stable-diffusion/slides-2023-02-16.pdf), [presented in Machine Learning Spain Meetup, Dec. 1st 2022](stable-diffusion/slides-2022-12-01.pdf).
 * Generative AI (English): [presented in URJC, March 7th 2025](generative-ai/slides.pdf), [presented in URJC, Jornada sobre IA en Educación, May 13 2024](generative-ai/slides-urjc-2024-05-13.pdf),  [presented in Jornadas Anuales de Wikimedia España, November 11th 2023](generative-ai/slides-wikimediaes-2023-11-11.pdf), [presented in IES Villaverde, October 18th 2023](generative-ai/slides-villaverde-2023-10-18.pdf).
 
