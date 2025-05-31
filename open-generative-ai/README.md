@@ -1,5 +1,7 @@
 Slides for the following talk:
 
+https://innovacionyformacion.educa.madrid.org/actividades/inteligencia-artificial-actividades-didacticas-basicas-todas-edades-asignaturas-curso
+
 Title: "Modelos abiertos de inteligencia artificial generativa"
 
 Description:
