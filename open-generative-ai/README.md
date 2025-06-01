@@ -1,3 +1,9 @@
+Slides updated for the talk:
+
+https://ies-rafael-alberti.github.io/jornadas-software-libre-educacion-cadiz/
+
+I Jornadas de Software Libre en Educación
+
 Slides for the following talk:
 
 https://innovacionyformacion.educa.madrid.org/actividades/inteligencia-artificial-actividades-didacticas-basicas-todas-edades-asignaturas-curso

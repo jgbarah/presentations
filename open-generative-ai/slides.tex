@@ -55,8 +55,8 @@
 \institute[URJC]{Universidad Rey Juan Carlos \\
   \url{https://floss.social/@jgbarah} ~~~~~ \url{https://jgbarah.github.io/presentations}}
 
-\date[May 2024]{\small Inteligencia Artificial: Actividades didácticas \\
-  Madrid, Spain, May 19 2025~~~~~~~~\includegraphics[width=1.2cm]{figs/by-sa}}
+\date[June 2025]{\small I Jornadas de Software Libre en Educacion \\
+  IES Rafael Alberti, Cadiz, Spain, June 2 2025~~\includegraphics[width=1.2cm]{figs/by-sa}}
 
 \begin{document}
 
@@ -102,6 +102,24 @@
 
 
 %%-----------------------------------------
+\begin{frame}[fragile]
+  \includegraphics[width=9cm]{figs/ies_rafael_alberti}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \includegraphics[width=9cm]{figs/cats_ies_rafael_alberti}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \includegraphics[width=9cm]{figs/dinosaurs_ies_rafael_alberti}
+
+\end{frame}
+
+%%-----------------------------------------
 %%-----------------------------------------
 \section{What is an ``open'' model?}
 
@@ -125,24 +143,46 @@
   \end{center}
 \end{frame}
 
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Start by trying!}
+
+  \begin{center}
+    {\large
+      \url{https://api.aime.info/sd3_5/}
+    }
+  \end{center}
+\end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Models for text, images...}
+  \frametitle{Start by trying!}
 
-    \begin{columns}[T]
-    \begin{column}{.58\textwidth}
-        \includegraphics[width=7cm]{figs/selfie}
-    \end{column}%
-    \hfill%
-    \begin{column}{.38\textwidth}
-      {\small Stable Diffusion XL:} \\
-      selfie of a teacher with a dinosaur, in Manhattan \\
-      cinematic-default \\
-    \end{column}%
-  \end{columns}
-
+  \begin{center}
+    {\large
+      \url{https://api.aime.info/tts-tortoise/}
+    }
+  \end{center}
 \end{frame}
+
+
+% %%-----------------------------------------
+% \begin{frame}[fragile]
+%   \frametitle{Models for text, images...}
+
+%     \begin{columns}[T]
+%     \begin{column}{.58\textwidth}
+%         \includegraphics[width=7cm]{figs/selfie}
+%     \end{column}%
+%     \hfill%
+%     \begin{column}{.38\textwidth}
+%       {\small Stable Diffusion XL:} \\
+%       selfie of a teacher with a dinosaur, in Manhattan \\
+%       cinematic-default \\
+%     \end{column}%
+%   \end{columns}
+
+% \end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -189,7 +229,7 @@
 
 %% -----------------------------------------
 \begin{frame}[fragile]
-  \frametitle{Example: Stable Diffusion}
+  \frametitle{Example: Stable Diffusion 1.0}
 
       \includegraphics[width=10cm]{figs/sd-process}
 
@@ -244,16 +284,56 @@ All of the above, and
 
 %%-----------------------------------------
 \begin{frame}[fragile]
-\frametitle{For each of them...}
+\frametitle{The four freedoms}
 
 \begin{itemize}
-\item Freedom of use
-\item Freedom of study
-\item Freedom of modification
-\item Freedom of sharing
+\item Freedom to use
+\item Freedom to study and modify
+\item Freedom to distribute
+\item Freedom to distribute modifications
+\end{itemize}
+
+\begin{flushright}
+  \url{https://www.gnu.org/philosophy/free-sw.en.html}
+\end{flushright}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Use}
+
+\begin{itemize}
+\item Model weights
+\item Minimum: Detailed descritpion of the model architecture
+\item Practical: Inference software
+\item Permission
 \end{itemize}
 \end{frame}
 
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Study and modify}
+
+\begin{itemize}
+\item Training set, software \& parameters
+\item Permission
+\end{itemize}
+
+Special case: Finetuning \\
+(model weights \& architecture)
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Distribute}
+
+Both as such and modified:
+
+\begin{itemize}
+\item Permission
+\end{itemize}
+\end{frame}
 
 %%-----------------------------------------
 \begin{frame}[fragile]
@@ -387,6 +467,41 @@ Key components:
 
 %%-----------------------------------------
 \begin{frame}[fragile]
+\frametitle{Models to download}
+
+\begin{itemize}
+\item HuggingFace: all kinds \\
+  \url{https://huggingface.co/}
+\item CivitAI: images \\
+  \url{https://civitai.com/}
+\end{itemize}
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+\frametitle{Models via cloud APIs}
+
+\begin{itemize}
+\item OpenRouter: text \\
+  \url{https://openrouter.ai/}
+\item Groq: text \\
+  \url{https://groq.com/}
+\item Replicate: images \\
+  \url{https://replicate.com}
+\item Together.ai: multimodal \\
+  \url{https://together.ai/}
+\item SambaNova: multimodal \\
+  \url{https://sambanova.ai/}
+\end{itemize}
+\end{frame}
+
+
+%%-----------------------------------------
+%%-----------------------------------------
+\section{Models, models, models}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
   \frametitle{Speech to text: Whisper}
 
 %  \includegraphics[width=8.5cm]{figs/whisper}
@@ -431,6 +546,27 @@ $ tts --text "Texto" \
     {\small
     \url{https://github.com/idiap/coqui-ai-TTS} \\
     License: MPL-2.0 (open source) \\
+  }
+  \end{flushright}
+
+\end{frame}
+
+%%-----------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Text to speech: Tortoise TTS}
+
+{\small
+\begin{verbatim}
+$ python tortoise/do_tts.py \
+  --text "Hello everybody!" \
+  --voice random --preset fast
+\end{verbatim}
+}
+
+  \begin{flushright}
+    {\small
+    \url{https://github.com/neonbjb/tortoise-tts} \\
+    License: Apache-2.0 (open source) \\
   }
   \end{flushright}
 
@@ -578,8 +714,8 @@ catAI
 \begin{frame}[fragile]
   \frametitle{Collections of consented, open data}
 
-  Chatbot Arena Leaderboard \\
-  \url{https://chat.lmsys.org/}
+%  Chatbot Arena Leaderboard \\
+%  \url{https://chat.lmsys.org/}
 
   LAION Open Empathic \\
   \url{https://laion.ai/blog/open-empathic/}
@@ -1036,17 +1172,6 @@ catAI
       \url{https://jupyter.org/}
     }
   \end{flushright}
-\end{frame}
-
-%%-----------------------------------------
-\begin{frame}[fragile]
-  \frametitle{API Providers}
-
-  OpenRouter: \url{https://openrouter.ai/} \\
-  Groq: \url{https://groq.com/} \\
-  Together.ai: \url{https://together.ai} \\
-  SambaNova \url{https://sambanova.ai/} \\
-  ...and many more \\
 \end{frame}
 
 
