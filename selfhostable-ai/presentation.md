@@ -631,6 +631,9 @@ uv venv --python 3.11
 uv pip install open-webui
 uv run open-webui serve
 ```
+
+Now, open http://localhost:8080
+
 ---
 
 ![h:500 Open WebUI](figs/open-webui.png)
@@ -697,16 +700,18 @@ Jan
 [Whisper](https://github.com/openai/whisper), MIT License
 
 ```
+uv venv
+uv pip install openai-whisper
+uv run whisper speech.wav --language Spanish
+```
+
+```
 #!/usr/bin/python3
 import whisper
 
 model = whisper.load_model('tiny')
 transcription = model.transcribe('recording.wav')
 print(transcription['text'])
-```
-
-```
-$ whisper speech.wav --language Spanish
 ```
 
 ---
