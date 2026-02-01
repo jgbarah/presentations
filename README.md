@@ -16,6 +16,7 @@ Social aspects of technology:
   (Spanish)
 * La tecnología te controla: [transpas (últina versión)](tecnologia-te-controla/transpas-2020-11.pdf), [transpas (Pint of Science 2018)](tecnologia-te-controla/transpas-2018-05.pdf) (Spanish)
 * Software libre en educacion:  [transpas (última versión)](soft-libre-educacion/soft-libre-educacion.pdf), [transpas (Jornada EducaMadrid-MAX, 2021)](soft-libre-educacion/soft-libre-educacion-2021.pdf), [transpas (Jornada MAX 10.0, 2019)](soft-libre-educacion/soft-libre-educacion-2019.pdf) (Spanish)
+* Geopolitics of code (talk at FOSDEM 2026): [slides](geopolitics-code/geopolitics-code.pdf)
 
 Technology:
 

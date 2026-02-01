@@ -7,7 +7,7 @@ from openai import OpenAI
 
 RETRIES = 2
 MODEL = "qwen/qwen3-235b-a22b:free"
-# MODEL = "openai/gpt-oss-20b:free"
+MODEL = "openai/gpt-oss-20b:free"
 # MODEL = "deepseek/deepseek-chat-v3.1:free"
 
 # Load environment variables
@@ -63,6 +63,7 @@ def call_llm():
     print("LLM Response: ")
     print(response)
     content = response.choices[0].message.content
+    print()
     print(content)
 
 
