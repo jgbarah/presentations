@@ -8,7 +8,7 @@ paginate: true
 
 ### Escuela de Ingeniería de Fuenlabrada
 
-Fuenlabrada, Spain, October 14th, 2025
+Fuenlabrada, Spain, March 27, 2025
 
 Jesus M. Gonzalez-Barahona
 
@@ -233,8 +233,8 @@ In some cases, referred as "open weight models"
 * [Gema3](https://deepmind.google/models/gemma/)
     * Gemma Terms of Use
 
-* [Mistral Large](https://huggingface.co/mistralai/Mistral-Large-Instruct-2411) (2024-11)
-    * Mistral Research License
+* [Mistral Small 4](https://mistral.ai/news/mistral-small-4) (2026-03)
+    * Apache 2.0
 
 ---
 ## Available weights models examples
@@ -322,13 +322,13 @@ In some cases, referred as "open weight models"
 
 ## Open source model examples
 
-* [DeepSeek](https://huggingface.co/deepseek-ai/DeepSeek-V3.1) (2025-08)
+* [DeepSeek](https://huggingface.co/deepseek-ai/DeepSeek-V3.2) (2025-09)
     * MIT License
 
 * [GPT-OSS](https://openai.com/open-models/) (2025-08)
     * Apache 2.0 License
 
-* [Qwen3](https://huggingface.co/collections/Qwen/) (2025-04)
+* [Qwen3.5](https://huggingface.co/collections/Qwen) (2026-02)
     * Apache 2.0 License
 
 ---
@@ -362,7 +362,7 @@ In some cases, referred as "open weight models"
 ---
 ## Reproducible (libre) model examples
 
-* [Olmo2](https://allenai.org/olmo), [technical report](https://arxiv.org/abs/2501.00656) (2025-05)
+* [Olmo3](https://allenai.org/olmo), [technical report](https://arxiv.org/abs/2512.13961) (2025-12)
     * Apache 2.0 License
 
 * [MAP-Neo](https://map-neo.github.io/) (2025-04)
@@ -570,6 +570,15 @@ You have to do the math
 ![h:500 HuggingFace Adaptions](figs/huggingface_model_tree.png)
 
 ---
+## Civit.AI: Images & videos
+
+* Finetuning
+* Quantizations
+* Images and videos
+
+https://civitai.com/
+
+---
 ## Inference engines
 
 * [llama.cpp](https://github.com/ggerganov/llama.cpp)
@@ -749,6 +758,22 @@ $ tts --text "Texto" \
 
 * Text to 3D: [LlamaMesh](https://huggingface.co/Zhengyi/LLaMA-Mesh), Llama Community License (2024-11)
 
+* Open model and tools for building videos with AI: [OpenSora](https://hpcaitech.github.io/Open-Sora/)
+  * [repo](https://github.com/hpcaitech/Open-Sora)
+
+---
+## Other applications
+
+* [OpenCode](https://opencode.ai/): assistant, agentic
+  * CLI, web and desktop app
+
+* [AnythingLLM](https://anythingllm.com/): assistant, agentic
+
+* [FastSDCPU](https://github.com/rupeshs/fastsdcpu): image generation optimized for CPU
+
+* [Lemonade](https://github.com/lemonade-sdk/lemonade): LLM, image and speech generation tool
+  * Works well with Vulkan, apparently recognizing my Intel Iris GPU
+
 
 ---
 ## Other applications
@@ -797,9 +822,18 @@ $ tts --text "Texto" \
 * [SWE-bench-live](https://swe-bench-live.github.io/)
 
 ---
+# Bonus track
+# Some interesting tools
 
+* [HuggingChat](https://huggingface.co/chat/)
+  * Chat-like interface
+  * Many models, MCP servers...
 
-# Bonus track:
+* [Petals](https://petals.dev/)
+  * Inference by distributed collaboration
+
+---
+# Bonus track 2:
 # Are LLMs deterministic?
 
 ---
