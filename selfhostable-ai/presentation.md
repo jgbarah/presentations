@@ -774,6 +774,7 @@ $ tts --text "Texto" \
 * [Lemonade](https://github.com/lemonade-sdk/lemonade): LLM, image and speech generation tool
   * Works well with Vulkan, apparently recognizing my Intel Iris GPU
 
+* [OpenClaw](https://openclaw.ai/): Agentic system
 
 ---
 ## Other applications
