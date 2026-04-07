@@ -762,10 +762,12 @@ $ tts --text "Texto" \
   * [repo](https://github.com/hpcaitech/Open-Sora)
 
 ---
-## Other applications
+# Other applications
 
 * [OpenCode](https://opencode.ai/): assistant, agentic
   * CLI, web and desktop app
+
+* [Hive](https://morapelker.github.io/hive/): orchestrator for coding agents
 
 * [AnythingLLM](https://anythingllm.com/): assistant, agentic
 
@@ -774,7 +776,16 @@ $ tts --text "Texto" \
 * [Lemonade](https://github.com/lemonade-sdk/lemonade): LLM, image and speech generation tool
   * Works well with Vulkan, apparently recognizing my Intel Iris GPU
 
+---
+# Other applications (2)
+
 * [OpenClaw](https://openclaw.ai/): Agentic system
+
+* [Hermes agent](https://github.com/NousResearch/hermes-agent): Agentic system
+
+* [Autoresearch](https://github.com/karpathy/autoresearch): Self-improvign agent
+
+* [Good night, have fun](https://github.com/kunchenguid/gnhf): Autoresearch-style agent, for coding
 
 ---
 ## Other applications
