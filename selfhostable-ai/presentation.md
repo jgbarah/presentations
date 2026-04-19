@@ -6,9 +6,9 @@ paginate: true
 
 # Generative AI models running in your own infrastructure
 
-### Escuela de Ingeniería de Fuenlabrada
+### esLibre 2026
 
-Fuenlabrada, Spain, March 27, 2025
+Melide, Spain, March 18, 2026
 
 Jesus M. Gonzalez-Barahona
 
