@@ -377,6 +377,9 @@ In some cases, referred as "open weight models"
 * [Apertus](https://www.swiss-ai.org/apertus) (2025-09)
     * Apache 2.0 License
 
+* [Alia](https://alia.gob.es/) (2026-02)
+    * Apache 2.0 License
+
 ---
 
 ![Model kinds](figs/model_kinds.png)
@@ -451,7 +454,6 @@ At least, "available weights" if inference code is available
     * Open weights models
 * Open source models
 * Reproducible models
-* Ethical models (usually)
 
 ---
 
