@@ -6,9 +6,9 @@ paginate: true
 
 # Generative AI models running in your own infrastructure
 
-### esLibre 2026
+### AI: Activities for all ages and subjects
 
-Melide, Spain, March 18, 2026
+Madrid, Spain, May 11, 2026
 
 Jesus M. Gonzalez-Barahona
 
