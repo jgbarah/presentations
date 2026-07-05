@@ -24,6 +24,7 @@ Technology:
 * [Open web](open-web) (English)
 * [Extended reality in the browser](xr) (English)
 * [Building Python packages](pip-packages) (English)
+* [Things I did without (almost) a GPU](cpu-local-ai/presentation.pdf) (English). About AI models that run on CPU, and tools for running them. Presented at the 1st Workshop on Free Software and Open Artificial Intelligence.
 * [Self-hostable AI](selfhostable-ai/): [English](selfhostable-ai/presentation.pdf), [summary in Spanish](selfhostable-ai/presentacion.pdf)
 * Open Models for Generative Artificial Intelligence: [presented in IES Rafael Alberti, Cadiz, Spain](open-generative-ai/slides.pdf) (English), [presented in URJC, May 19 2025, translated into Spanish by Qwen/Qwen3-235B-A22B](open-generative-ai/slides-es.pdf).
 * Stable Diffusion (English): [presented in IES Villaverde, June 9th 2023](stable-diffusion/slides-2023-06-09.pdf) [presented in URJC, Mar. 30th 2023](stable-diffusion/slides-2023-03-30.pdf), [presented in URJC, Feb. 16th 2023](stable-diffusion/slides-2023-02-16.pdf), [presented in Machine Learning Spain Meetup, Dec. 1st 2022](stable-diffusion/slides-2022-12-01.pdf).
